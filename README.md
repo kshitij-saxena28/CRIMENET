@@ -2,484 +2,384 @@
 
 ## AI-Assisted Criminal Network Investigation Intelligence
 
-DARK CRIMENET is a case-scoped investigation intelligence platform that helps connect, verify, and analyse information distributed across multiple First Information Reports (FIRs) and related investigation records.
+DARK CRIMENET is an **AI-assisted, evidence-backed investigation intelligence platform** for connecting, verifying, analyzing, and understanding information across FIRs and related investigation records.
 
-It combines document intelligence, OCR, rule-based NLP, classical machine learning, entity resolution, human verification, knowledge graphs, and explainable analytics into a single investigation workspace.
+It combines **document intelligence, NLP, entity resolution, knowledge graphs, graph analytics, anomaly detection, timeline intelligence, geographic analysis, communication analysis, evidence verification, and explainable investigation signals** into a case-scoped workflow.
 
-> **Decision-support prototype — synthetic data only.**
->
-> DARK CRIMENET produces investigative signals and review priorities. It does not determine guilt or replace investigator judgement.
+The system is designed around a simple principle:
 
----
+> **Automate the analysis, but keep investigators in control of verification and decisions.**
 
-## Overview
-
-Investigation data is often distributed across FIRs, documents, communication records, financial transactions, vehicle sightings, locations, and other sources.
-
-The same person, phone number, vehicle, account, location, or event may appear across multiple records with spelling variations, OCR errors, incomplete identifiers, or different representations.
-
-DARK CRIMENET creates a **case-scoped, evidence-backed investigation graph** that allows these records to be reviewed together while keeping uncertain relationships separate until they are verified.
-
-### Core Workflow
-
-**Collect → Understand → Connect → Analyse → Detect → Explain → Investigate → Verify → Report**
+> **Data:** Synthetic data for development and demonstration  
+> **Backend:** Python / FastAPI  
+> **Frontend:** Vanilla JavaScript  
+> **Graph:** NetworkX with optional Neo4j support  
+> **Database:** SQLite  
+> **Deployment:** Local / Docker
 
 ---
 
-# Key Features
+## What It Solves
 
-## FIR & Document Intelligence
+Investigation information is often distributed across FIRs, documents, communication records, financial records, vehicles, locations, and other sources.
 
-- Multi-FIR investigation workspaces
-- PDF, DOCX, TXT, CSV, XLSX and image ingestion
-- Scanned-document OCR using Tesseract
-- English, Hindi and Marathi OCR
-- OCR preprocessing and confidence information
-- Role-aware FIR field extraction
-- Original document/text preservation
-- Evidence-linked extraction
-- Structured intelligence export
+Working with these records manually makes it difficult to:
+
+- identify recurring entities across FIRs
+- discover indirect relationships
+- resolve potentially matching identities
+- understand how networks evolve over time
+- connect communication and financial activity
+- identify unusual patterns
+- trace analytical signals back to evidence
+- distinguish machine-generated candidates from verified information
+
+DARK CRIMENET converts these fragmented records into a **case-scoped investigation intelligence layer** where information can be extracted, matched, reviewed, verified, connected, and analyzed.
 
 ---
 
-## Human-in-the-Loop Entity Resolution
+# System Workflow
 
-Potentially recurring entities are identified using:
+```text
+FIRs & Investigation Records
+            │
+            ▼
+┌───────────────────────────┐
+│ Ingest & Understand       │
+│ OCR + Document Processing │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Extract & Normalize       │
+│ Entities + Events         │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Entity Resolution         │
+│ Candidate Matching        │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Human Verification        │
+│ Create / Link / Reject    │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Verified Knowledge Graph  │
+└─────────────┬─────────────┘
+              │
+       ┌──────┼───────────────┐
+       ▼      ▼       ▼       ▼
+     Graph  Timeline  Geo   CDR / Finance
+    Analysis          Intel   Analysis
+       │      │       │       │
+       └──────┴───────┴───────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Anomaly & Contradiction   │
+│ Detection                 │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Explainable Signals       │
+│ + Investigation Copilot   │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Evidence / Audit / Report │
+└───────────────────────────┘
+```
 
-- Character n-gram TF-IDF
+---
+
+# Core Features
+
+## 1. FIR & Document Intelligence
+
+The platform can ingest multiple types of investigation records, including:
+
+- PDF
+- DOCX
+- TXT
+- CSV
+- XLSX
+- scanned documents and images
+
+The document pipeline combines OCR, preprocessing, extraction, normalization, and validation to convert unstructured records into structured investigation data.
+
+Supported languages include:
+
+- English
+- Hindi
+- Marathi
+
+---
+
+## 2. Entity Extraction & Resolution
+
+The system extracts investigation-relevant entities such as:
+
+```text
+Person
+Phone
+Vehicle
+Account
+Location
+FIR
+Organization
+Event
+Social Account
+```
+
+Potentially matching entities are identified using a combination of:
+
+- normalized identifiers
+- lexical similarity
+- character n-gram TF-IDF
 - KNN / nearest-neighbour matching
-- Lexical similarity
-- Identifier matching
-- Normalised identifiers
-- Explainable candidate scoring
+- identifier evidence
+- contextual scoring
 
-Entity resolution produces **candidates rather than automatic identity decisions**.
+Candidate matches remain separate from verified identities until reviewed.
+
+---
+
+## 3. Human-in-the-Loop Verification
+
+A major design decision is to keep automated predictions separate from verified investigation data.
+
+```text
+Extracted
+    ↓
+Candidate
+    ↓
+Human Review
+    ↓
+Verified
+    ↓
+Knowledge Graph
+```
 
 Investigators can:
 
-- Create relationships
-- Link entities
-- Ignore candidates
-- Verify relationships
-- Reject relationships
+- create relationships
+- link entities
+- verify candidates
+- reject candidates
+- ignore uncertain matches
 
-Only verified information is promoted into the investigation graph.
-
----
-
-## Knowledge Graph
-
-Verified investigation information is represented as a case-scoped graph.
-
-Supported entities include:
-
-- Person
-- Phone
-- Vehicle
-- Account
-- Location
-- Organisation
-- FIR
-- Event
-
-Graph capabilities include:
-
-- Neighbourhood exploration
-- 1–3 hop analysis
-- Shortest paths
-- Hidden indirect connections
-- Relationship filtering
-- Cross-FIR relationships
-- Evidence-key tracing
-- Case-scoped graph analysis
-
-The graph uses **NetworkX** locally, with an optional Neo4j configuration path.
+This prevents an uncertain automated match from silently becoming a verified relationship.
 
 ---
 
-## Network Intelligence
+# Knowledge Graph
 
-DARK CRIMENET provides graph-based investigation analytics including:
+Verified information is represented as a **case-scoped knowledge graph**.
+
+### Entities
+
+```text
+Person
+Phone
+Vehicle
+Account
+Location
+FIR
+Organization
+Event
+Social Account
+```
+
+### Relationships
+
+```text
+CALLED
+OWNED
+USED
+VISITED
+MET
+ASSOCIATED
+REGISTERED_TO
+LOCATED_AT
+```
+
+The graph provides a structured representation of how entities and events are connected across an investigation.
+
+The system can also surface relationships across multiple FIRs when they share evidence keys or other verified connections.
+
+---
+
+# Graph Analytics
+
+The graph engine provides several analytical capabilities:
 
 - Degree centrality
 - Betweenness centrality
 - PageRank
 - Eigenvector centrality
+- Closeness centrality
 - Community detection
 - Shortest paths
-- Hidden connections
-- Link prediction
-- Network relationship analysis
+- Hidden / indirect connections
+- Link analysis
+- Network evolution
+- Network disruption analysis
 
-These outputs are intended to help investigators identify relevant structures and relationships for further review.
-
----
-
-## Timeline Intelligence
-
-Investigation events are organised into a case-scoped timeline.
-
-Supported activity includes:
-
-- Calls
-- Transactions
-- Meetings
-- Vehicle sightings
-- Locations
-- FIR events
-- Other dated investigation events
-
-The timeline supports:
-
-- FIR-based swimlanes
-- Event categories
-- Range filtering
-- Event inspection
-- Timeline focus
-- Filtered CSV/JSON export
-- Related-entity timeline views
+These analyses help identify important nodes, communities, paths, and structural changes within an investigation network.
 
 ---
 
-## Geographic Intelligence
+# Timeline Intelligence
 
-Location-based investigation analysis includes:
+Investigation events can be analyzed chronologically to identify:
 
-- Event mapping
-- Repeated locations
-- Co-location
-- Movement sequences
-- Geographic relationships
-- Location-based investigation views
-
-The frontend uses **Leaflet** for map visualisation.
+- event sequences
+- repeated activity
+- temporal relationships
+- activity surrounding important events
+- gaps and unusual timing
+- relationships between events across records
 
 ---
 
-## CDR & Communication Analysis
+# Geographic Intelligence
 
-Communication intelligence includes:
+Location and movement-related information can be analyzed to identify:
 
-- Call counts
-- Contact pairs
-- Communication frequency
-- Contact intensity
-- Relationship-level call analysis
-- CDR event timelines
-
-The same case-scoped representation is used across communication and graph analysis.
+- repeated locations
+- co-location
+- geographic relationships
+- vehicle sightings
+- location-based connections
+- activity around significant places
 
 ---
 
-## Financial Intelligence
+# Communication & Financial Analysis
 
-Financial investigation analysis includes:
+### Communication Records
 
-- Transaction relationships
-- Transaction amounts
-- High-value transfers
-- Fan-in/fan-out patterns
-- Multi-step transaction flows
-- Possible pass-through relationships
-- Circular-flow candidates
-- Financial network analysis
+Communication data can be analyzed for:
 
----
+- call volumes
+- repeated contacts
+- communication relationships
+- top communication pairs
+- temporal communication patterns
 
-## Anomaly Detection
+### Financial Records
 
-DARK CRIMENET uses classical unsupervised methods including:
+Synthetic financial records can be analyzed to identify:
 
-- Isolation Forest
-- Local Outlier Factor
-
-Anomaly signals can incorporate:
-
-- Network position
-- Transaction activity
-- Event frequency
-- Communication activity
-- Other case-derived features
-
-> Anomaly scores are **investigation review signals**, not probabilities of guilt.
+- transaction relationships
+- connected accounts
+- unusual transaction patterns
+- financial links between entities
 
 ---
 
-## Explainable Investigation Signals
+# AI & Machine Learning
 
-The platform can surface:
+DARK CRIMENET uses a combination of **rule-based intelligence, classical machine learning, and graph algorithms** rather than depending on an LLM for the core workflow.
 
-- Anomalies
-- Contradictions
-- Missing-link candidates
-- Network bridges
-- Repeated activity
-- Relationship candidates
-- Investigation priorities
+| Component | Approach |
+|---|---|
+| Document extraction | Rule-based / structured extraction |
+| OCR | Tesseract + image preprocessing |
+| Entity normalization | Identifier and text normalization |
+| Entity resolution | Character n-grams + TF-IDF + KNN + similarity evidence |
+| Context scoring | Offline contextual ML models |
+| Anomaly detection | Isolation Forest + Local Outlier Factor |
+| Graph analysis | NetworkX |
+| Community analysis | Graph community algorithms |
+| Contradiction detection | Rule-based consistency checks |
+| Investigation signals | Evidence-backed analytical scoring |
 
-Signals retain contributing factors, model information, and source references where available.
-
----
-
-## Cross-FIR Intelligence
-
-Multiple FIRs can be uploaded into the same investigation workspace.
-
-The system can identify explainable shared evidence keys such as:
-
-- Phone numbers
-- Vehicles
-- Accounts
-- Serial identifiers
-
-Cross-FIR analysis provides:
-
-- FIR relationship candidates
-- Evidence-key inventory
-- Per-FIR tracing
-- Relationship network visualisation
-- Connection-only path analysis
-
-The system does **not silently merge uncertain person identities** simply because their names are similar.
+The architecture prioritizes **inspectability, reproducibility, and evidence-backed reasoning**.
 
 ---
 
-## Social Media Intelligence
+# Explainable Investigation Signals
 
-DARK CRIMENET includes a Social Media Intelligence workflow for importing and analysing structured social-media-related investigation information.
+The platform does not treat an anomaly score or model prediction as a conclusion.
 
-The feature is designed as an investigation-support tool and does not perform autonomous identity verification or facial recognition.
+Investigation signals can include:
 
----
+- anomaly scores
+- contributing factors
+- evidence references
+- source records
+- relationship context
+- model/version information
+- contradiction indicators
 
-## Surveillance Reports
-
-The platform provides a dedicated Surveillance Reports workflow for organising and reviewing surveillance-related investigation records within the case context.
-
----
-
-## Investigation Copilot
-
-DARK CRIMENET includes a local, graph-aware investigation Copilot.
-
-It operates on available case information and can assist with queries such as:
-
-- Case summaries
-- Entity relationships
-- FIR relationships
-- Shortest paths
-- Centrality
-- Communities
-- Calls
-- Financial relationships
-- Investigation signals
-- Contradictions
-
-The Copilot is designed to remain grounded in available investigation data rather than inventing evidence.
+This allows an investigator to understand **why a signal was generated and where the underlying information came from**.
 
 ---
 
-## Evidence Management
+# Investigation Copilot
 
-The Evidence Vault provides:
+The platform includes a local, source-aware investigation Copilot for working with verified case information.
 
-- Evidence records
-- SHA-256 integrity verification
-- Pending/verified evidence states
-- Original/current hash comparison
-- Authorised evidence retrieval
-- Case-scoped evidence identifiers
+It supports investigation-oriented interactions such as:
 
-Evidence is not automatically treated as verified simply because it was uploaded.
+- graph-oriented queries
+- relationship exploration
+- case summaries
+- evidence-aware investigation questions
+- analytical explanations
+
+The Copilot operates within the available case information and does not replace the underlying verification workflow.
 
 ---
 
-## Data Integrity & Audit
+# Evidence & Audit
 
-DARK CRIMENET includes a signed, hash-chained integrity ledger.
+DARK CRIMENET treats evidence integrity and auditability as first-class parts of the system.
 
-Security and audit capabilities include:
+Implemented mechanisms include:
 
 - SHA-256 evidence hashing
-- HMAC-based audit integrity
-- Signed ledger records
-- Tamper detection
-- Offline ledger verification
-- Persistent audit trails
-- Case-scoped access control
-- Role-aware permissions
+- evidence integrity verification
+- hash-chained audit records
+- signed integrity ledger
+- Ed25519 signatures
+- offline ledger verification
+- source references for analytical signals
 
-The repository includes an offline ledger verification utility:
-
-~~~text
-scripts/verify_ledger.py
-~~~
+This creates a traceable connection between investigation information, analytical outputs, and their underlying evidence.
 
 ---
 
 # Security
 
-The platform includes multiple security controls:
+The platform includes application-level security controls such as:
 
 - Role-based access control
-- Case-level authorisation
-- Session management
-- Password hashing
-- Login rate limiting
-- TOTP-based two-step sign-in
-- Recovery codes
-- Evidence hashing
-- Signed integrity ledger
-- Audit trails
-- Upload validation
-- Content Security Policy
-- Security headers
-- Input validation
+- Case-level authorization
+- Password management
+- TOTP-based two-step authentication
+- Session controls
+- Login protection
+- Evidence access controls
+- Audit logging
+- Masked auditor views
+- Configurable application secrets
 
-### Supported Roles
-
-- **Admin** — user, role, and case administration
-- **Supervisor** — supervisory investigation access
-- **Investigator** — FIR ingestion, review, graph, analytics, evidence, Copilot and reports
-- **Auditor** — masked read-only investigation and audit access
-- **Demo** — controlled demonstration access
-
-Production deployment should use approved identity management, strong secret management, TLS, least privilege, and environment-specific security controls.
-
----
-
-# AI / Machine Learning Approach
-
-DARK CRIMENET deliberately uses lightweight, explainable techniques rather than depending on a large language model for the core workflow.
-
-### Rule-Based Intelligence
-
-Used for:
-
-- FIR field extraction
-- Identifier detection
-- Validation
-- Legal terminology
-- Multilingual lexicons
-- Relationship hints
-- Contradiction checks
-- Evidence validation
-
-### Classical Machine Learning
-
-Used for:
-
-- Contextual entity scoring
-- Entity resolution
-- Link prediction
-- Anomaly detection
-
-Techniques include:
-
-- TF-IDF character n-grams
-- Logistic Regression
-- KNN
-- Isolation Forest
-- Local Outlier Factor
-
-The contextual FIR model is a **secondary confidence signal** for deterministic extraction and is not intended to replace human verification.
-
-### Graph Analytics
-
-NetworkX provides:
-
-- Centrality
-- Communities
-- Paths
-- Relationship analysis
-- Cross-FIR graph analysis
-
-> **No external GPT/LLM API is required for the core investigation workflow.**
-
----
-
-# Multilingual FIR Intelligence
-
-The document pipeline supports:
-
-- English
-- Hindi
-- Marathi
-- Mixed English/Hindi/Marathi documents
-
-The workflow preserves original extracted information and provides an English view for investigator convenience.
-
-It exposes:
-
-- Language candidates
-- OCR confidence
-- Translation method/confidence
-- Critical-field validation status
-- Detected events
-- Evidence-backed relationship candidates
-- Structured JSON intelligence
-
-An optional local IndicTrans2 configuration can provide higher-quality narrative translation.
-
-> Machine OCR and translation are assistive. Critical names, identifiers, dates, locations, and legal sections should always be checked against the original document.
-
----
-
-# Demonstration Dataset
-
-DARK CRIMENET uses a deterministic **synthetic investigation dataset** for demonstration and testing.
-
-The default demo generator can create:
-
-- 270 entities
-- 349 evidence-linked graph relationships
-- 2,530 timeline events
-- 1,100 synthetic CDR/communication events
-- 850 synthetic financial transactions
-- Vehicle sightings
-- Meetings
-- Geospatial events
-- 8 synthetic cases
-- Review tasks
-- Investigation signals
-- Synthetic evidence records
-
-The generated scenario is deterministic, allowing the same investigation scenario to be reproduced.
-
-> **No real criminal-investigation dataset is required to run the demonstration.**
-
----
-
-# Cross-FIR Demo
-
-Synthetic interconnected FIR samples are available under:
-
-~~~text
-demo_dataset/cross_fir_samples/
-~~~
-
-The sample FIRs intentionally share synthetic identifiers while retaining different FIR information.
-
-### Demo Flow
-
-1. Start DARK CRIMENET.
-2. Sign in using the demo account.
-3. Create or select an FIR investigation workspace.
-4. Open **Ingestion & Review**.
-5. Upload multiple FIR samples.
-6. Process and inspect the extraction results.
-7. Review OCR confidence and relationship candidates.
-8. Submit human verification.
-9. Open **Knowledge Graph**.
-10. Open **Analytics → Cross-FIR**.
-11. Inspect the shared evidence keys and relationships.
-12. Use the Copilot to query the verified relationship.
+The architecture is designed so that investigation data is accessed within the context of an authorized case workspace.
 
 ---
 
 # Technology Stack
 
-## Backend
+### Backend
 
 - Python
 - FastAPI
@@ -488,18 +388,14 @@ The sample FIRs intentionally share synthetic identifiers while retaining differ
 - SQLAlchemy
 - SQLite
 
-## Machine Learning / Data Processing
+### AI / Data
 
 - scikit-learn
 - NumPy
 - pandas
-
-## Graph Analytics
-
 - NetworkX
-- Optional Neo4j configuration
 
-## Document Intelligence
+### Document Intelligence
 
 - Tesseract OCR
 - pytesseract
@@ -510,7 +406,7 @@ The sample FIRs intentionally share synthetic identifiers while retaining differ
 - python-docx
 - openpyxl
 
-## Frontend
+### Frontend
 
 - HTML
 - CSS
@@ -518,366 +414,367 @@ The sample FIRs intentionally share synthetic identifiers while retaining differ
 - Cytoscape.js
 - Leaflet
 
-## Security
+The frontend is a lightweight single-page application served through the FastAPI application.
+
+### Security
 
 - SHA-256
 - HMAC
-- Ed25519
 - PBKDF2
 - Fernet
-- PyJWT
+- JWT
 - TOTP
-
----
-
-# Architecture
-
-~~~text
-                    ┌──────────────────────┐
-                    │      FIR / DATA      │
-                    │ PDF DOCX CSV XLSX    │
-                    │ Images CDR Finance   │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │  INGESTION + OCR     │
-                    │ Document Intelligence │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ EXTRACTION + NLP     │
-                    │ Entities / Events     │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ ENTITY RESOLUTION    │
-                    │ TF-IDF / KNN / Rules │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ HUMAN VERIFICATION   │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ VERIFIED CASE GRAPH  │
-                    │ NetworkX / Neo4j     │
-                    └──────────┬───────────┘
-                               ↓
-          ┌────────────────────┼────────────────────┐
-          ↓                    ↓                    ↓
-     ┌──────────┐        ┌───────────┐       ┌───────────┐
-     │ Network  │        │ Timeline  │       │ CDR /     │
-     │ Analysis │        │ Geography │       │ Finance   │
-     └────┬─────┘        └─────┬─────┘       └─────┬─────┘
-          └────────────────────┼────────────────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ EXPLAINABLE SIGNALS  │
-                    │ Anomaly / Links /    │
-                    │ Contradictions       │
-                    └──────────┬───────────┘
-                               ↓
-                    ┌──────────────────────┐
-                    │ REPORTS + AUDIT      │
-                    │ PDF DOCX CSV JSON    │
-                    └──────────────────────┘
-~~~
+- Ed25519
 
 ---
 
 # Project Structure
 
-~~~text
+```text
 CRIMENET/
 │
-├── ai_engine/
-├── backend/
-├── data_pipeline/
-├── demo_dataset/
-├── docs/
-├── evidence_store/
-├── graph_engine/
-├── reports/
-├── sample_firs/
-├── scripts/
-├── security/
-├── tesseract_data/
-├── web/
+├── ai_engine/          # NLP and machine-learning components
+├── backend/             # FastAPI application
+├── data_pipeline/       # Document ingestion and processing
+├── demo_dataset/        # Synthetic demonstration data
+├── docs/                # Documentation
+├── evidence_store/      # Evidence storage
+├── graph_engine/        # Knowledge graph and graph analytics
+├── reports/             # Report generation
+├── sample_firs/         # Sample FIR/document inputs
+├── scripts/             # Setup, demo and utility scripts
+├── security/            # Authentication and security
+├── tesseract_data/      # OCR language resources
+├── web/                 # Frontend application
 │
-├── .dockerignore
 ├── .env.example
 ├── .gitignore
-├── DEMO_ACCOUNTS.md
 ├── Dockerfile
-├── QUICK_START_WINDOWS.md
-├── RELEASE_NOTES.md
-├── RUN_WINDOWS.bat
-├── VALIDATION_REPORT.md
-├── VERSION.txt
 ├── docker-compose.yml
 ├── pyproject.toml
-├── requirements-dev.txt
 ├── requirements.txt
+├── requirements-dev.txt
+├── RUN_WINDOWS.bat
 ├── run.sh
+├── QUICK_START_WINDOWS.md
+├── VALIDATION_REPORT.md
+├── RELEASE_NOTES.md
 └── README.md
-~~~
+```
+
+Runtime databases, secrets, private keys, generated evidence, and other local state are excluded from version control.
 
 ---
 
-# Installation
+# Dataset
 
-## Windows — Recommended
+Real criminal investigation datasets are difficult to use because of privacy, legal, security, and access restrictions.
 
-Run:
+DARK CRIMENET therefore uses **synthetic data for development and demonstration**.
 
-~~~text
+The synthetic environment can contain:
+
+- people
+- phone numbers
+- vehicles
+- accounts
+- locations
+- organizations
+- FIRs
+- events
+- communication records
+- financial transactions
+- vehicle sightings
+- evidence-linked relationships
+
+The demonstration data is deterministic so that the investigation workflow can be reproduced consistently.
+
+**No real personal or criminal investigation data is required to run the demonstration.**
+
+---
+
+# Cross-FIR Analysis
+
+Multiple FIRs can be loaded into a single investigation workspace.
+
+The system can identify shared evidence keys and candidate relationships across records, for example:
+
+```text
+FIR 01 ─────┐
+            │
+            ├── Shared Phone
+            ├── Shared Vehicle
+            ├── Shared Account
+            └── Shared Identifier
+            │
+FIR 02 ─────┘
+```
+
+These relationships are surfaced as candidates and can be reviewed before becoming verified graph information.
+
+The objective is **not** to automatically assume that matching records represent the same person.
+
+---
+
+# Multilingual FIR Intelligence
+
+The document pipeline supports:
+
+- English
+- Hindi
+- Marathi
+
+OCR is supported for scanned and photographed documents using local Tesseract language resources.
+
+The system can expose:
+
+- OCR confidence
+- extracted fields
+- detected language
+- translated information
+- critical-field validation
+- detected events
+- relationship candidates
+- structured output
+
+Critical identifiers such as names, phone numbers, dates, and case numbers should always be checked against the original document.
+
+---
+
+# Running the Project
+
+## Windows
+
+The simplest option is:
+
+```text
 RUN_WINDOWS.bat
-~~~
+```
 
-The launcher detects Python 3.11+, creates a local virtual environment, installs dependencies, starts the application, and opens the local interface.
+Or use the manual setup below.
 
-The application runs as a **single FastAPI-served web application**:
+### Create the environment
 
-~~~text
-http://localhost:8000
-~~~
-
-API documentation:
-
-~~~text
-http://localhost:8000/docs
-~~~
-
----
-
-## Manual Setup
-
-### 1. Create a virtual environment
-
-~~~bash
+```bash
 python -m venv venv
-~~~
+```
 
-### 2. Activate it
+### Activate it
 
-Windows PowerShell:
-
-~~~powershell
+```powershell
 .\venv\Scripts\Activate.ps1
-~~~
+```
 
-If required:
+### Install dependencies
 
-~~~powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-~~~
-
-### 3. Install dependencies
-
-~~~bash
+```bash
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-~~~
+```
 
-### 4. Start the application
+### Start the application
 
-~~~bash
+```bash
 python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
-~~~
+```
 
 Open:
 
-~~~text
+```text
 http://localhost:8000
-~~~
-
----
-
-## Linux / macOS
-
-~~~bash
-./run.sh
-~~~
-
-Or manually:
-
-~~~bash
-pip install -r requirements.txt
-python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
-~~~
+```
 
 ---
 
 ## Docker
 
-Copy the environment template:
+Create the environment file:
 
-~~~bash
+```bash
 cp .env.example .env
-~~~
+```
 
-Then run:
+Then:
 
-~~~bash
+```bash
 docker compose up --build
-~~~
+```
 
-The container serves both the frontend and API on:
+Open:
 
-~~~text
+```text
 http://localhost:8000
-~~~
-
----
-
-# Demo Dataset
-
-After signing in as an Admin:
-
-**Admin Portal → Demo Lab → Load synthetic demo dataset**
-
-The demo loader uses the deterministic generator:
-
-~~~text
-scripts/seed_demo.py
-~~~
-
-Alternatively:
-
-~~~bash
-python scripts/seed_demo.py --reset
-~~~
-
-For a full demo reset:
-
-~~~bash
-python scripts/seed_demo.py --reset --yes-delete-everything
-~~~
-
-The destructive reset command is restricted to demo mode.
+```
 
 ---
 
 # OCR Setup
 
-Check the local Tesseract installation using:
+For local installations, Tesseract OCR and the required language data should be installed.
 
-~~~powershell
+Supported language resources include:
+
+```text
+eng
+hin
+mar
+```
+
+Check OCR availability with:
+
+```powershell
 .\venv\Scripts\python.exe scripts\check_ocr.py
-~~~
+```
 
-DARK CRIMENET supports:
+If Tesseract is installed in a non-standard location, configure:
 
-- `eng`
-- `hin`
-- `mar`
-
-If Tesseract is installed outside the standard Windows location, configure:
-
-~~~text
+```text
 TESSERACT_CMD
-~~~
+```
 
-with the full path to `tesseract.exe`.
-
----
-
-# Model / Extraction Validation
-
-The repository includes an offline contextual scorer used as a secondary signal for FIR extraction.
-
-Train it with:
-
-~~~bash
-python scripts/train_fir_models.py
-~~~
-
-The resulting model is stored under:
-
-~~~text
-ai_engine/models/fir_entity_context.joblib
-~~~
-
-This model supports the deterministic extraction workflow and does not replace human verification.
+The Docker environment provides the required OCR resources automatically.
 
 ---
 
-# Reports
+# Demo Environment
 
-Investigation reports can be generated in:
+The bundled synthetic dataset can be initialized with:
 
-- PDF
-- DOCX
-- CSV
-- JSON
+```bash
+python scripts/seed_demo.py --reset
+```
 
-Reports remain scoped to the active investigation workspace.
+The generated environment is intended for demonstration and testing.
 
 ---
 
 # Responsible Use
 
-DARK CRIMENET is intended as an investigation decision-support prototype.
+DARK CRIMENET is designed as an **investigation decision-support system**, not an autonomous decision-maker.
 
-It should not be used to:
+Its outputs should be interpreted as investigative signals and must not be treated as:
 
-- Automatically determine guilt
-- Automatically establish criminal responsibility
-- Replace trained investigators
-- Treat anomaly scores as proof
-- Treat predicted links as verified facts
-- Treat OCR or translation as unquestionable evidence
-- Make decisions without reviewing the underlying evidence
+- proof of criminal activity
+- proof of identity
+- proof of guilt
+- proof of innocence
 
-All significant investigative signals should be reviewed against their source evidence.
+Human review is required for important investigative decisions.
+
+Any real-world deployment would require appropriate legal authorization, privacy controls, security review, governance, validation, and operational safeguards.
 
 ---
 
 # Limitations
 
+This project is a research and development prototype.
+
+Important limitations include:
+
 - Demonstration data is synthetic.
-- Real-world investigative accuracy has not been established.
-- OCR performance depends on document quality.
-- Entity-resolution candidates require human verification.
-- Anomaly detection produces review signals rather than guilt probabilities.
-- Link prediction identifies structurally plausible relationships rather than proving relationships.
-- Translation is assistive and should be checked against the original document.
-- Production deployment would require additional infrastructure, security, governance, identity, and validation controls.
+- Real-world documents can contain significantly more variation.
+- OCR accuracy depends on document quality.
+- Automated extraction can produce incorrect or incomplete information.
+- Entity resolution produces candidate matches and is not identity proof.
+- Analytical signals require human interpretation.
+- Model performance depends on the quality and completeness of available records.
+- Production deployment would require additional infrastructure, security, governance, and validation.
+
+---
+
+# Why This Architecture
+
+The project is intentionally built as more than an isolated ML model.
+
+The system connects:
+
+```text
+Documents
+   ↓
+NLP / Extraction
+   ↓
+Entity Resolution
+   ↓
+Human Verification
+   ↓
+Knowledge Graph
+   ↓
+Graph + Temporal + Geographic Analysis
+   ↓
+Anomaly Detection
+   ↓
+Explainable Signals
+   ↓
+Evidence + Audit
+   ↓
+Reports
+```
+
+This architecture allows the individual AI and data components to contribute to a larger end-to-end application rather than operating independently.
+
+---
+
+# Research Basis
+
+The project builds on the problem area explored in:
+
+**“AI-Enabled Smart FIR Drafting and Legal Validation System”**
+
+DARK CRIMENET extends that FIR-focused problem toward investigation intelligence by focusing on:
+
+- cross-FIR connections
+- entity resolution
+- evidence-backed relationship discovery
+- case-scoped knowledge graphs
+- network analysis
+- timeline intelligence
+- geographic intelligence
+- communication and financial analysis
+- anomaly detection
+- explainable investigation signals
+- human verification
 
 ---
 
 # Project Status
 
-**Current Release:** v5.3.0
+**Current release:** `v5.3.0`
 
-**Application:** FastAPI + single-page web interface
+The current implementation provides an end-to-end investigation intelligence workflow covering:
 
-**Graph:** NetworkX with optional Neo4j configuration
+- document ingestion
+- multilingual OCR
+- entity extraction
+- entity resolution
+- human verification
+- case-scoped knowledge graphs
+- cross-FIR analysis
+- graph analytics
+- timeline intelligence
+- geographic intelligence
+- communication analysis
+- financial analysis
+- anomaly detection
+- contradiction detection
+- explainable investigation signals
+- evidence integrity
+- audit trails
+- signed ledger verification
+- investigation Copilot
+- report generation
+- role-based access
+- two-step authentication
 
-**Database:** SQLite
-
-**Data:** Deterministic synthetic investigation dataset
-
-**Deployment:** Local / Docker
-
----
-
-# Documentation
-
-Additional project documentation is available in the repository:
-
-- `QUICK_START_WINDOWS.md` — Windows setup
-- `DEMO_ACCOUNTS.md` — demo roles and access
-- `RELEASE_NOTES.md` — version history and detailed changes
-- `VALIDATION_REPORT.md` — validation information
-- `docs/` — security, user guide, and supporting documentation
+Detailed implementation history is maintained in `RELEASE_NOTES.md`.
 
 ---
 
 # Disclaimer
 
-DARK CRIMENET is a research-oriented decision-support prototype.
+DARK CRIMENET is a research and development prototype.
 
-It does not make legal determinations, establish criminal responsibility, or replace trained investigators or legal authorities.
+All investigation data included with the project is synthetic or generated for demonstration purposes.
 
-All investigative signals should be independently reviewed against the original evidence.
+The system is intended to assist with organizing and analyzing investigation information. It does not establish criminal liability, identity, guilt, or innocence.
+
+Any real-world use would require appropriate legal authorization, privacy protections, security controls, validation, governance, and human oversight.
