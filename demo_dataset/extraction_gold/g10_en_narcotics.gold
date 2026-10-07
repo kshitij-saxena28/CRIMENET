@@ -1,0 +1,40 @@
+id: g10
+split: dev
+lang: English
+tags: clean,ndps,seizure
+---text---
+FIRST INFORMATION REPORT
+District: Amritsar   Police Station: Chheharta   Year: 2026   FIR No: 0067/2026
+Date of FIR: 3 Feb 2026   Time: 04:50 hrs
+Acts & Sections: NDPS Act Section 21, 29 and Arms Act 25
+Place of Occurrence: Naka near GT Road, Chheharta, Amritsar
+Complainant: SI Gurpreet Singh (Police Station Chheharta)
+Details of Accused: Harjinder Singh alias Bobby s/o Balwinder Singh, r/o Village Vadala; Manpreet Kaur w/o Harjinder Singh.
+Brief facts: During naka checking on 02-02-2026 at 11:30 PM, a Royal Enfield motorcycle PB 02 CX 3345 was stopped. 250 grams of heroin and Rs. 1.5 lakh cash was recovered from Harjinder Singh. One .32 bore pistol was recovered. Harjinder disclosed that supplier Kulwant Singh alias Kala (mobile 9815123456) supplies drugs. Two witnesses Jaswant Singh and Rakesh Kumar signed the recovery memo.
+Investigating Officer: Inspector Baljit Kaur
+---expect---
+field fir_number: 0067/2026
+field district: Amritsar
+field police_station: Chheharta
+field fir_date: 2026-02-03
+field fir_time: 04:50
+field complainant: Gurpreet Singh
+field investigating_officer: Baljit Kaur
+entity PHONE: 9815123456
+entity VEHICLE: PB02CX3345
+entity AMOUNT: 150000
+entity DATE: 2026-02-03
+entity DATE: 2026-02-02
+entity SECTION: NDPS:21
+entity SECTION: NDPS:29
+entity SECTION: ARMS:25
+person: Gurpreet Singh | COMPLAINANT
+person: Harjinder Singh | ACCUSED
+person: Balwinder Singh | RELATIVE
+person: Manpreet Kaur | ACCUSED
+person: Kulwant Singh | ACCUSED
+person: Jaswant Singh | WITNESS
+person: Rakesh Kumar | WITNESS
+person: Baljit Kaur | INVESTIGATING_OFFICER
+rel: Kulwant Singh | OWNS | 9815123456
+---end---

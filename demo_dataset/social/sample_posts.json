@@ -1,0 +1,450 @@
+{
+ "note": "SYNTHETIC. Every person, account, phone number, e-mail, UPI ID and wallet below is invented for training and demonstration. Wallet addresses are checksum-valid but belong to no one.",
+ "accounts": [
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "display_name": "Quick Cash Deals",
+   "bio": "Instant loans & double returns | WhatsApp +91 90000 11223 | Delhi NCR",
+   "followers": 8200,
+   "following": 120,
+   "profile_url": "https://x.example/quickcash_deals"
+  },
+  {
+   "platform": "instagram",
+   "handle": "quickcash.deals",
+   "display_name": "QuickCash Deals",
+   "bio": "Instant loans & double returns | WhatsApp +91 90000 11223 | Noida",
+   "followers": 5400,
+   "following": 80,
+   "profile_url": "https://instagram.example/quickcash.deals"
+  },
+  {
+   "platform": "x",
+   "handle": "fastprofit_guru",
+   "display_name": "FastProfit Guru",
+   "bio": "Trading tips daily. Pay via UPI ravi.khatri@okaxis. Mumbai",
+   "followers": 3100,
+   "following": 45,
+   "profile_url": "https://x.example/fastprofit_guru"
+  },
+  {
+   "platform": "x",
+   "handle": "earn_daily_priya",
+   "display_name": "Priya | Earn Daily",
+   "bio": "घर बैठे कमाओ | contact priyadeals@example.com",
+   "followers": 1900,
+   "following": 300,
+   "profile_url": "https://x.example/earn_daily_priya"
+  },
+  {
+   "platform": "telegram",
+   "handle": "easy_money_hub",
+   "display_name": "Easy Money Hub",
+   "bio": "Signals and giveaways. Wallet: 1Xt72swPa64Dv5Y5ecT5N6BYSttvQNiUp",
+   "followers": 760,
+   "following": 3,
+   "profile_url": "https://telegram.example/easy_money_hub"
+  },
+  {
+   "platform": "x",
+   "handle": "ravi_k_official",
+   "display_name": "Ravi Khatri",
+   "bio": "Delhi | cricket, chai and bad puns",
+   "followers": 410,
+   "following": 380,
+   "profile_url": "https://x.example/ravi_k_official"
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "display_name": "Cricket Chatter",
+   "bio": "Live banter for every match. Not a news site.",
+   "followers": 22000,
+   "following": 150,
+   "profile_url": "https://x.example/cricket_chatter"
+  },
+  {
+   "platform": "x",
+   "handle": "newsdesk_local",
+   "display_name": "Local Newsdesk",
+   "bio": "City news, police and courts. Reports only.",
+   "followers": 54000,
+   "following": 90,
+   "profile_url": "https://x.example/newsdesk_local"
+  },
+  {
+   "platform": "facebook",
+   "handle": "sunita.sharma.9",
+   "display_name": "Sunita Sharma",
+   "bio": "Pune | teacher | dhaba lover",
+   "followers": 320,
+   "following": 210,
+   "profile_url": "https://facebook.example/sunita.sharma.9"
+  },
+  {
+   "platform": "x",
+   "handle": "sharma_vikram",
+   "display_name": "Vikram S",
+   "bio": "Patna",
+   "followers": 95,
+   "following": 60,
+   "profile_url": "https://x.example/sharma_vikram"
+  },
+  {
+   "platform": "x",
+   "handle": "charas_delivery_ncr",
+   "display_name": "NCR Night Stuff",
+   "bio": "DM only. No calls.",
+   "followers": 140,
+   "following": 10,
+   "profile_url": "https://x.example/charas_delivery_ncr"
+  },
+  {
+   "platform": "x",
+   "handle": "voice_of_colony",
+   "display_name": "Voice of the Colony",
+   "bio": "Speaking for our mohalla",
+   "followers": 610,
+   "following": 44,
+   "profile_url": "https://x.example/voice_of_colony"
+  }
+ ],
+ "posts": [
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-1",
+   "timestamp": "2026-09-21T21:05:00+05:30",
+   "text": "Invest Rs 5000 today and double your money in 7 days. Guaranteed returns! Limited slots, message on WhatsApp now https://bit.ly/QkCash7 #DoubleMoney",
+   "likes": 40,
+   "shares": 12
+  },
+  {
+   "platform": "x",
+   "handle": "fastprofit_guru",
+   "post_id": "fastprofit_guru-2",
+   "timestamp": "2026-09-21T21:08:00+05:30",
+   "text": "Invest Rs 5000 today and double your money in 7 days. Guaranteed returns! Only limited slots - message on WhatsApp now https://bit.ly/QkCash7 #DoubleMoney",
+   "likes": 11,
+   "shares": 3,
+   "mentions": [
+    "quickcash_deals"
+   ]
+  },
+  {
+   "platform": "x",
+   "handle": "earn_daily_priya",
+   "post_id": "earn_daily_priya-3",
+   "timestamp": "2026-09-21T21:11:00+05:30",
+   "text": "RT @quickcash_deals: Invest Rs 5000 today and double your money in 7 days. Guaranteed returns! Limited slots, message on WhatsApp now https://bit.ly/QkCash7 #DoubleMoney",
+   "shares": 1,
+   "repost_of": "quickcash_deals"
+  },
+  {
+   "platform": "telegram",
+   "handle": "easy_money_hub",
+   "post_id": "easy_money_hub-4",
+   "timestamp": "2026-09-21T21:17:00+05:30",
+   "text": "Invest Rs 5000 today and double your money in 7 days. Guaranteed returns! Limited slots, message on WhatsApp now https://bit.ly/QkCash7 #DoubleMoney Send crypto to 1Xt72swPa64Dv5Y5ecT5N6BYSttvQNiUp"
+  },
+  {
+   "platform": "instagram",
+   "handle": "quickcash.deals",
+   "post_id": "quickcash.deals-5",
+   "timestamp": "2026-09-21T21:40:00+05:30",
+   "text": "Double your money in 7 days, guaranteed returns! DM or WhatsApp +91-90000-11223 #DoubleMoney",
+   "likes": 90
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-6",
+   "timestamp": "2026-09-14T22:40:00+05:30",
+   "text": "Loan approved in 5 minutes! Pay a small insurance fee first and get 2 lakh instantly. Call +91 90000 11223",
+   "likes": 10
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-7",
+   "timestamp": "2026-09-15T23:10:00+05:30",
+   "text": "Delhi NCR customers: instant cash today. Ask for Ravi. WhatsApp +919000011223",
+   "likes": 11
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-8",
+   "timestamp": "2026-09-16T23:55:00+05:30",
+   "text": "Trust us. 200 happy clients in Noida this month #InstantLoan",
+   "likes": 12
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-9",
+   "timestamp": "2026-09-17T00:20:00+05:30",
+   "text": "Your account will be blocked unless you update KYC now, click https://bit.ly/QkCash7 to verify",
+   "likes": 13
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-10",
+   "timestamp": "2026-09-18T22:15:00+05:30",
+   "text": "Guaranteed returns for the first 50 people. Hurry!",
+   "likes": 14
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-11",
+   "timestamp": "2026-09-19T23:45:00+05:30",
+   "text": "Thank you Noida! New office near Sector 18 market. Come visit.",
+   "likes": 15
+  },
+  {
+   "platform": "x",
+   "handle": "quickcash_deals",
+   "post_id": "quickcash_deals-12",
+   "timestamp": "2026-09-20T01:05:00+05:30",
+   "text": "Weekend special: double your investment, message now #DoubleMoney",
+   "likes": 16
+  },
+  {
+   "platform": "x",
+   "handle": "fastprofit_guru",
+   "post_id": "fastprofit_guru-13",
+   "timestamp": "2026-09-16T22:10:00+05:30",
+   "text": "Pay your registration to ravi.khatri@okaxis and I will send you the tips. Mumbai team is ready.",
+   "mentions": [
+    "earn_daily_priya"
+   ]
+  },
+  {
+   "platform": "x",
+   "handle": "fastprofit_guru",
+   "post_id": "fastprofit_guru-14",
+   "timestamp": "2026-09-18T23:20:00+05:30",
+   "text": "Nifty view for tomorrow: range bound. Not investment advice. #Markets"
+  },
+  {
+   "platform": "x",
+   "handle": "earn_daily_priya",
+   "post_id": "earn_daily_priya-15",
+   "timestamp": "2026-09-19T22:50:00+05:30",
+   "text": "घर बैठे कमाओ 5000 रोज़, बस लिंक क्लिक करो https://bit.ly/EarnPri #WorkFromHome",
+   "replies": 4
+  },
+  {
+   "platform": "x",
+   "handle": "earn_daily_priya",
+   "post_id": "earn_daily_priya-16",
+   "timestamp": "2026-09-20T23:30:00+05:30",
+   "text": "Work from home. Earn Rs 3000 per day, no experience needed. Email priyadeals@example.com"
+  },
+  {
+   "platform": "telegram",
+   "handle": "easy_money_hub",
+   "post_id": "easy_money_hub-17",
+   "timestamp": "2026-09-20T00:30:00+05:30",
+   "text": "Free giveaway tonight! Send 0.1 BTC and get 0.2 BTC back. Wallet 1Xt72swPa64Dv5Y5ecT5N6BYSttvQNiUp and TRC20 TVtP3eFzysHgdNvdfxQ3oZ77z1Ewf4xREw #Giveaway"
+  },
+  {
+   "platform": "x",
+   "handle": "ravi_k_official",
+   "post_id": "ravi_k_official-18",
+   "timestamp": "2026-09-15T09:20:00+05:30",
+   "text": "Match day! Kohli will murder this bowling attack tonight, calling it now #INDvAUS",
+   "likes": 30
+  },
+  {
+   "platform": "x",
+   "handle": "ravi_k_official",
+   "post_id": "ravi_k_official-19",
+   "timestamp": "2026-09-15T09:45:00+05:30",
+   "text": "Chai at Connaught Place before the office. Delhi mornings are the best.",
+   "likes": 12
+  },
+  {
+   "platform": "x",
+   "handle": "ravi_k_official",
+   "post_id": "ravi_k_official-20",
+   "timestamp": "2026-09-22T18:30:00+05:30",
+   "text": "Reached Noida sector 18 market for a late lunch with the team",
+   "likes": 8
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-21",
+   "timestamp": "2026-09-15T20:15:00+05:30",
+   "text": "We will kill them in the semi-final, mark my words. Rohit is on fire tonight!",
+   "likes": 120
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-22",
+   "timestamp": "2026-09-15T21:30:00+05:30",
+   "text": "Bumrah absolutely destroyed the top order. What a spell! #INDvAUS",
+   "likes": 340,
+   "shares": 60
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-23",
+   "timestamp": "2026-09-16T19:05:00+05:30",
+   "text": "aaj toh chhakka maar dunga last over mein, dekhna 😂",
+   "likes": 44
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-24",
+   "timestamp": "2026-09-17T12:00:00+05:30",
+   "text": "Song of the day: 'main tujhe zinda nahi chhodunga' from the new film, what a dialogue 🎵",
+   "likes": 25
+  },
+  {
+   "platform": "x",
+   "handle": "newsdesk_local",
+   "post_id": "newsdesk_local-25",
+   "timestamp": "2026-09-18T11:00:00+05:30",
+   "text": "Police said the accused threatened a shopkeeper in Noida, 'I will kill you and your family', and was arrested on Tuesday.",
+   "likes": 60,
+   "shares": 22
+  },
+  {
+   "platform": "x",
+   "handle": "newsdesk_local",
+   "post_id": "newsdesk_local-26",
+   "timestamp": "2026-09-19T10:15:00+05:30",
+   "text": "Reminder from the cyber cell: never share your OTP with anyone. Beware of fraud calls. Helpline 1930.",
+   "likes": 200,
+   "shares": 150
+  },
+  {
+   "platform": "x",
+   "handle": "newsdesk_local",
+   "post_id": "newsdesk_local-27",
+   "timestamp": "2026-09-22T09:00:00+05:30",
+   "text": "Fact check: viral message about poisoned milk in Delhi is fake. Please do not forward.",
+   "likes": 90
+  },
+  {
+   "platform": "facebook",
+   "handle": "sunita.sharma.9",
+   "post_id": "sunita.sharma.9-28",
+   "timestamp": "2026-09-16T08:30:00+05:30",
+   "text": "पुणे में आज बारिश बहुत है, स्कूल की छुट्टी हो गई. चाय पीने चलें?",
+   "likes": 15
+  },
+  {
+   "platform": "facebook",
+   "handle": "sunita.sharma.9",
+   "post_id": "sunita.sharma.9-29",
+   "timestamp": "2026-09-18T19:00:00+05:30",
+   "text": "Sabko forward karo: bachcha chor gang active hai hamare area mein, savdhan rahiye. Share karo!",
+   "replies": 9
+  },
+  {
+   "platform": "facebook",
+   "handle": "sunita.sharma.9",
+   "post_id": "sunita.sharma.9-30",
+   "timestamp": "2026-09-20T18:20:00+05:30",
+   "text": "Lost my umbrella near Karol Bagh metro yesterday, please DM if found",
+   "likes": 3
+  },
+  {
+   "platform": "x",
+   "handle": "sharma_vikram",
+   "post_id": "sharma_vikram-31",
+   "timestamp": "2026-09-17T22:00:00+05:30",
+   "text": "paise nahi diye toh tumhari video viral kar dunga, socho. Patna mein hi rehna hai na?",
+   "replies": 0
+  },
+  {
+   "platform": "x",
+   "handle": "sharma_vikram",
+   "post_id": "sharma_vikram-32",
+   "timestamp": "2026-09-17T22:05:00+05:30",
+   "text": "Aur haan, tujhe jaan se maar dunga agar police gayi to",
+   "mentions": [
+    "ravi_k_official"
+   ]
+  },
+  {
+   "platform": "x",
+   "handle": "charas_delivery_ncr",
+   "post_id": "charas_delivery_ncr-33",
+   "timestamp": "2026-09-19T23:59:00+05:30",
+   "text": "MDMA and charas available, home delivery across Delhi NCR, DM for rates"
+  },
+  {
+   "platform": "x",
+   "handle": "charas_delivery_ncr",
+   "post_id": "charas_delivery_ncr-34",
+   "timestamp": "2026-09-20T00:10:00+05:30",
+   "text": "Weed and ganja stock ready. Delhi, Noida, Gurugram. DM only."
+  },
+  {
+   "platform": "x",
+   "handle": "voice_of_colony",
+   "post_id": "voice_of_colony-35",
+   "timestamp": "2026-09-21T20:45:00+05:30",
+   "text": "Burn their shops tonight, those people have no place in our colony. Gather at the chowk at 9.",
+   "mentions": [
+    "sharma_vikram"
+   ]
+  },
+  {
+   "platform": "x",
+   "handle": "voice_of_colony",
+   "post_id": "voice_of_colony-36",
+   "timestamp": "2026-09-18T08:00:00+05:30",
+   "text": "Community clean-up drive on Sunday at the park, everyone welcome!",
+   "likes": 30
+  },
+  {
+   "platform": "x",
+   "handle": "ravi_k_official",
+   "post_id": "ravi_k_official-37",
+   "timestamp": "2026-09-17T13:10:00+05:30",
+   "text": "@sharma_vikram bhai kya bol raha hai, delete kar ye",
+   "reply_to": "sharma_vikram"
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-38",
+   "timestamp": "2026-09-20T21:00:00+05:30",
+   "text": "Happy birthday to the man who never misses a match! #Legend",
+   "likes": 70
+  },
+  {
+   "platform": "x",
+   "handle": "cricket_chatter",
+   "post_id": "cricket_chatter-39",
+   "timestamp": "2026-09-21T21:06:00+05:30",
+   "text": "Good morning cricket fans! Coffee, scorecard and rain in Mumbai",
+   "likes": 17
+  }
+ ],
+ "seed_entities": [
+  {
+   "type": "PERSON",
+   "name": "Ravi Khatri (synthetic)",
+   "attributes": {
+    "upi": "ravi.khatri@okaxis"
+   }
+  },
+  {
+   "type": "PHONE",
+   "name": "+919000011223",
+   "attributes": {}
+  }
+ ]
+}

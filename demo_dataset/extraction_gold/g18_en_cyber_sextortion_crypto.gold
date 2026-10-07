@@ -1,0 +1,34 @@
+id: g18
+split: dev
+lang: English
+tags: clean,cyber,crypto
+---text---
+FIR No: 0733/2026   Cyber Police Station, Hyderabad   Date of FIR: 30/06/2026
+Sections: Section 67A IT Act, 384 IPC, 66C IT Act
+Complainant: Naveen Reddy, S/o Venkat Reddy, R/o Madhapur, Hyderabad (Ph: 9963 445 566).
+Facts: The accused Pooja alias Riya contacted the complainant on Instagram profile @riya_hyd_99 and later on WhatsApp number +91 6300 998 877. She recorded a private video call and extorted Rs. 75,000 by threatening to share the video with his family. The complainant paid via Google Pay to UPI ID riya99@paytm on 28-06-2026 and 29-06-2026. Money was also asked to be deposited in bitcoin wallet address bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh. Email used by accused: riya.hyd99@outlook.com.
+Investigating Officer: Inspector Shiva Prasad
+---expect---
+field fir_number: 0733/2026
+field fir_date: 2026-06-30
+field complainant: Naveen Reddy
+field investigating_officer: Shiva Prasad
+entity PHONE: 9963445566
+entity PHONE: 6300998877
+entity UPI: riya99@paytm
+entity EMAIL: riya.hyd99@outlook.com
+entity AMOUNT: 75000
+entity DATE: 2026-06-30
+entity DATE: 2026-06-28
+entity DATE: 2026-06-29
+entity SECTION: IT:67A
+entity SECTION: IPC:384
+entity SECTION: IT:66C
+person: Naveen Reddy | COMPLAINANT
+person: Venkat Reddy | RELATIVE
+person: Pooja | ACCUSED
+person: Shiva Prasad | INVESTIGATING_OFFICER
+rel: Pooja | OWNS | riya99@paytm
+rel: Naveen Reddy | OWNS | 9963445566
+rel: Pooja | OWNS | riya.hyd99@outlook.com
+---end---

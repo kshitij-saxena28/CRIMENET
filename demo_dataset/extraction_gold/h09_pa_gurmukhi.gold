@@ -1,0 +1,26 @@
+id: h09
+split: heldout
+lang: Punjabi
+tags: gurmukhi,identifiers
+---text---
+ਪਹਿਲੀ ਸੂਚਨਾ ਰਿਪੋਰਟ
+ਜ਼ਿਲ੍ਹਾ: ਜਲੰਧਰ ਥਾਣਾ: ਡਵੀਜ਼ਨ ਨੰਬਰ 5 ਐਫ.ਆਈ.ਆਰ ਨੰਬਰ: 118/2026
+ਮਿਤੀ: 05/03/2026
+ਧਾਰਾ: 379, 411 IPC
+ਸ਼ਿਕਾਇਤਕਰਤਾ: ਗੁਰਦੀਪ ਸਿੰਘ
+ਮੋਬਾਈਲ: 9876512345
+ਵੇਰਵਾ: ਮਿਤੀ 04/03/2026 ਨੂੰ ਸ਼ਿਕਾਇਤਕਰਤਾ ਦਾ ਮੋਟਰਸਾਈਕਲ PB 08 GH 1122 ਚੋਰੀ ਹੋ ਗਿਆ। ਕੀਮਤ 60,000 ਰੁਪਏ।
+---expect---
+field fir_number: 118/2026
+field fir_date: 2026-03-05
+entity PHONE: 9876512345
+entity VEHICLE: PB08GH1122
+entity AMOUNT: 60000
+entity DATE: 2026-03-05
+entity DATE: 2026-03-04
+entity SECTION: IPC:379
+entity SECTION: IPC:411
+translate: Jalandhar
+person: ਗੁਰਦੀਪ ਸਿੰਘ | COMPLAINANT
+rel: ਗੁਰਦੀਪ ਸਿੰਘ | OWNS | 9876512345
+---end---

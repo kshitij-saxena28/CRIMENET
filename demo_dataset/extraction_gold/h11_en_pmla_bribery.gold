@@ -1,0 +1,34 @@
+id: h11
+split: heldout
+lang: English
+tags: clean,corruption
+---text---
+FIR No. 0021/2026 dated 08.01.2026, ACB Police Station, Lucknow
+Sections: Prevention of Corruption Act 1988 s. 7 and 13(1)(d); IPC 120B
+Complainant: Shri Ramakant Tripathi (contractor), mobile +91-9415-778899
+It is alleged that Executive Engineer Sudhir Agarwal demanded Rs. 3,00,000 as bribe for clearing pending bills of Rs. 48 lakh. The demand was made on 04-01-2026 from his official mobile 9935001100 and confirmed through his PA Neeraj Saxena. The bribe amount was to be handed over near Gomti Nagar. A trap was laid on 07/01/2026 and Rs. 3,00,000 was recovered from Sudhir Agarwal's Scorpio UP 32 LK 1001.
+Investigating Officer: DSP Mohit Chandra
+---expect---
+field fir_number: 0021/2026
+field fir_date: 2026-01-08
+field complainant: Ramakant Tripathi
+field investigating_officer: Mohit Chandra
+entity PHONE: 9415778899
+entity PHONE: 9935001100
+entity VEHICLE: UP32LK1001
+entity AMOUNT: 300000
+entity AMOUNT: 4800000
+entity DATE: 2026-01-08
+entity DATE: 2026-01-04
+entity DATE: 2026-01-07
+entity SECTION: IPC:120B
+entity SECTION: PCA:7
+entity SECTION: PCA:13
+person: Ramakant Tripathi | COMPLAINANT
+person: Sudhir Agarwal | ACCUSED
+person: Neeraj Saxena | ACCUSED
+person: Mohit Chandra | INVESTIGATING_OFFICER
+rel: Sudhir Agarwal | OWNS | 9935001100
+rel: Sudhir Agarwal | USED | UP32LK1001
+rel: Ramakant Tripathi | OWNS | 9415778899
+---end---

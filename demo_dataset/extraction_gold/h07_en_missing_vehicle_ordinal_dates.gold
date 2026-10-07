@@ -1,0 +1,30 @@
+id: h07
+split: heldout
+lang: English
+tags: informal,dates
+---text---
+Police Station: Whitefield, Bengaluru East      FIR No.: 0871/2026
+
+Complaint received on 12th Jan 2026 (Monday).
+
+Complainant Ms. Divya Menon (age 29) of Prestige Shantiniketan states that her Honda Activa KA 03 MN 8899 was taken by her ex-colleague Arjun Rao on 9th January 2026 for a day and has not been returned. He is not answering calls on 7760 334 455. She had earlier transferred Rs 15,000/- to Arjun's PhonePe 7760334455@ybl as security. Her friend Kavya Nair can confirm this. Kindly register a case under Section 316(2) BNS.
+
+Recorded by: HC Manjunath Gowda
+---expect---
+field police_station: Whitefield, Bengaluru East
+field fir_number: 0871/2026
+field complainant: Divya Menon
+entity PHONE: 7760334455
+entity VEHICLE: KA03MN8899
+entity UPI: 7760334455@ybl
+entity AMOUNT: 15000
+entity DATE: 2026-01-12
+entity DATE: 2026-01-09
+entity SECTION: BNS:316
+person: Divya Menon | COMPLAINANT
+person: Arjun Rao | ACCUSED
+person: Kavya Nair | WITNESS
+rel: Arjun Rao | OWNS | 7760334455
+rel: Arjun Rao | OWNS | 7760334455@ybl
+person: Manjunath Gowda | POLICE_OFFICER
+---end---

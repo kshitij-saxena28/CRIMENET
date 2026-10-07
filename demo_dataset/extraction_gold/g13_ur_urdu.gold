@@ -1,0 +1,26 @@
+id: g13
+split: dev
+lang: Urdu
+tags: urdu,arabic-script
+---text---
+ابتدائی اطلاعی رپورٹ
+ضلع: حیدرآباد تھانہ: چارمینار ایف آئی آر نمبر: 77/2026
+تاریخ: 04/08/2026
+دفعہ: 379, 34 IPC
+شکایت کنندہ: محمد عرفان
+موبائل: 9848011223
+تفصیل: مورخہ 03/08/2026 کو شکایت کنندہ کی موٹر سائیکل TS 09 EF 3210 چوری ہو گئی۔ قیمت 55,000 روپے۔
+---expect---
+field fir_number: 77/2026
+field fir_date: 2026-08-04
+entity PHONE: 9848011223
+entity VEHICLE: TS09EF3210
+entity AMOUNT: 55000
+entity DATE: 2026-08-04
+entity DATE: 2026-08-03
+entity SECTION: IPC:379
+entity SECTION: IPC:34
+translate: Hyderabad
+person: محمد عرفان | COMPLAINANT
+rel: محمد عرفان | OWNS | 9848011223
+---end---

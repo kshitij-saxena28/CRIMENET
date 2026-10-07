@@ -1,0 +1,25 @@
+id: g14
+split: dev
+lang: Gujarati
+tags: gujarati,identifiers
+---text---
+પ્રથમ માહિતી અહેવાલ
+જિલ્લો: અમદાવાદ પોલીસ સ્ટેશન: નવરંગપુરા એફઆઈઆર નંબર: 190/2026
+તારીખ: 11/10/2026
+કલમ: 420, 406 IPC
+ફરિયાદી: જીતેન્દ્ર પટેલ
+મોબાઇલ: 9825012345
+વિગત: ફરિયાદી સાથે 4.5 લાખ રૂપિયાની છેતરપિંડી થઈ. આરોપી GJ 01 KL 9087 નંબરની કારમાં ભાગી ગયો.
+---expect---
+field fir_number: 190/2026
+field fir_date: 2026-10-11
+entity PHONE: 9825012345
+entity VEHICLE: GJ01KL9087
+entity AMOUNT: 450000
+entity DATE: 2026-10-11
+entity SECTION: IPC:420
+entity SECTION: IPC:406
+translate: Ahmedabad
+person: જીતેન્દ્ર પટેલ | COMPLAINANT
+rel: જીતેન્દ્ર પટેલ | OWNS | 9825012345
+---end---

@@ -1,0 +1,26 @@
+id: g12
+split: dev
+lang: Tamil
+tags: tamil,identifiers
+---text---
+முதல் தகவல் அறிக்கை
+மாவட்டம்: சென்னை காவல் நிலையம்: அடையார் எஃப்.ஐ.ஆர் எண்: 310/2026
+தேதி: 22/09/2026
+பிரிவு: 420, 468 IPC
+புகார்தாரர்: முருகன் ராஜ்
+கைபேசி: 9840123456
+விவரம்: புகார்தாரரிடம் 3,50,000 ரூபாய் மோசடி செய்யப்பட்டது. குற்றவாளி TN 09 BQ 4321 என்ற காரில் தப்பினார். கணக்கு எண் 6012345678901.
+---expect---
+field fir_number: 310/2026
+field fir_date: 2026-09-22
+entity PHONE: 9840123456
+entity VEHICLE: TN09BQ4321
+entity AMOUNT: 350000
+entity ACCOUNT: 6012345678901
+entity DATE: 2026-09-22
+entity SECTION: IPC:420
+entity SECTION: IPC:468
+translate: Chennai
+person: முருகன் ராஜ் | COMPLAINANT
+rel: முருகன் ராஜ் | OWNS | 9840123456
+---end---

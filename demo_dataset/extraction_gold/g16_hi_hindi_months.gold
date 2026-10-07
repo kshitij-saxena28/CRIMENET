@@ -1,0 +1,34 @@
+id: g16
+split: dev
+lang: Hindi
+tags: devanagari,hindi-months,amounts
+---text---
+थाना: सदर बाजार, जिला: दिल्ली
+प्रथम सूचना रिपोर्ट क्रमांक 501/2026, दिनांक 23 मार्च 2026
+धारा 406, 420 भारतीय दंड संहिता
+शिकायतकर्ता: राजेश गुप्ता पुत्र स्वर्गीय ओमप्रकाश गुप्ता, निवासी 22/5 करोल बाग, नई दिल्ली, मोबाइल 9711234567।
+आरोपी संजय अरोड़ा ने दिनांक 15 जनवरी 2026 को कारोबार में साझेदारी का झांसा देकर 12 लाख रुपये तथा दिनांक 20 फरवरी 2026 को 2.5 लाख रुपये HDFC बैंक खाता संख्या 50200012345678 (IFSC: HDFC0000123) में जमा कराए। आरोपी का पैन कार्ड ABCPS1234D है। आरोपी की गाड़ी DL 3C BV 2211 है।
+---expect---
+field fir_number: 501/2026
+field district: दिल्ली
+field police_station: सदर बाजार
+field fir_date: 2026-03-23
+field complainant: राजेश गुप्ता
+entity PHONE: 9711234567
+entity ACCOUNT: 50200012345678
+entity IFSC: HDFC0000123
+entity PAN: ABCPS1234D
+entity VEHICLE: DL3CBV2211
+entity AMOUNT: 1200000
+entity AMOUNT: 250000
+entity DATE: 2026-03-23
+entity DATE: 2026-01-15
+entity DATE: 2026-02-20
+entity SECTION: IPC:406
+entity SECTION: IPC:420
+person: राजेश गुप्ता | COMPLAINANT
+person: ओमप्रकाश गुप्ता | RELATIVE
+person: संजय अरोड़ा | ACCUSED
+rel: संजय अरोड़ा | USED | DL3CBV2211
+rel: राजेश गुप्ता | OWNS | 9711234567
+---end---

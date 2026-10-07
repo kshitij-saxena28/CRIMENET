@@ -1,0 +1,20 @@
+FIRST INFORMATION REPORT
+[SYNTHETIC SAMPLE - fictional data for demonstration only]
+District: Gautam Budh Nagar
+Police Station: Sector 39
+Year: 2026
+FIR No: 0388/2026
+Date of FIR: 14/09/2026
+Time: 07:30 hrs
+Acts & Sections: Section 457, 380 IPC
+Place of Occurrence: House No 77, Sector 41, Noida
+Complainant / Informant:
+Name: Rajesh Kumar
+Father's Name: Om Prakash
+Address: House No 77, Sector 41, Noida
+Accused: Unknown persons
+Details of Properties Stolen / Involved:
+Cash Rs 30,000, gold ornaments, one laptop
+Phone: 9811100044
+Short Description of Incident: During the night the family was away. Unknown persons broke the lock of the main door, entered the house and committed house-breaking, stealing cash, gold ornaments and a laptop. The neighbours noticed the broken lock in the morning.
+Investigating Officer: SI Kamal Singh

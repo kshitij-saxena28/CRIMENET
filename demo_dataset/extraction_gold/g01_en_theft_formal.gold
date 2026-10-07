@@ -1,0 +1,54 @@
+id: g01
+split: dev
+lang: English
+tags: clean,formal
+---text---
+FIRST INFORMATION REPORT
+(Under Section 173 BNSS)
+1. District: Ghaziabad    P.S.: Indirapuram    Year: 2026    FIR No: 0142/2026
+Date of FIR: 12/08/2026    Time: 18:20 hrs
+2. Acts & Sections: BNS Section 303(2), 3(5)
+3. Occurrence: Date 11/08/2026, Time from 21:00 to 23:30 hrs
+5. Place of Occurrence: Shipra Mall Road, Indirapuram, Ghaziabad
+6. Complainant / Informant:
+- Name: Rahul Sharma
+- Father's Name: Alok Sharma
+- Address: Flat 402, Skyline Apartments, Indirapuram
+- Mobile: +91 98765 43210
+7. Details of Known / Suspected / Unknown Accused:
+- Sunil Verma, resident of Khora Colony, seen fleeing on motorcycle UP14 AB 4521.
+8. Details of Properties Stolen:
+- 1x Dell laptop worth Rs. 65,000/-
+- Cash Rs 12,500
+9. Brief Facts: The complainant states that on 11 August 2026 his laptop bag was stolen from his parked car. Witness Meena Devi saw the accused fleeing. The accused had called the complainant on 9811122233 demanding Rs. 2 lakh.
+10. Investigating Officer: SI Amit Kumar
+---expect---
+field fir_number: 0142/2026
+field year: 2026
+field district: Ghaziabad
+field police_station: Indirapuram
+field fir_date: 2026-08-12
+field fir_time: 18:20
+field occurrence_date: 2026-08-11
+field complainant: Rahul Sharma
+field place_of_occurrence: Shipra Mall Road, Indirapuram, Ghaziabad
+field investigating_officer: Amit Kumar
+entity PHONE: 9876543210
+entity PHONE: 9811122233
+entity VEHICLE: UP14AB4521
+entity AMOUNT: 65000
+entity AMOUNT: 12500
+entity AMOUNT: 200000
+entity DATE: 2026-08-12
+entity DATE: 2026-08-11
+entity SECTION: BNS:303
+entity SECTION: BNS:3
+person: Rahul Sharma | COMPLAINANT
+person: Alok Sharma | RELATIVE
+person: Sunil Verma | ACCUSED
+person: Meena Devi | WITNESS
+person: Amit Kumar | INVESTIGATING_OFFICER
+rel: Sunil Verma | USED | UP14AB4521
+rel: Rahul Sharma | OWNS | 9876543210
+rel: Sunil Verma | CALLED | Rahul Sharma
+---end---

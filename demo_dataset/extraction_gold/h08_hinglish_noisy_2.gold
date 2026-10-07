@@ -1,0 +1,30 @@
+id: h08
+split: heldout
+lang: Hinglish
+tags: romanised,noisy
+---text---
+thana: Model Town    zila: Ludhiana    FIR no: 0Ol9/2026
+dinaank: 3O-O6-2026
+shikayatkarta - Balwinder Singh pita Gurdev Singh mobile 98I4O 55566
+ghatna: 29.6.2026 ko raat 1O baje mere khet se 2 motor (pump) aur tar chori hue kimat lagbhag Rs.4O,OOO. Gaon ke Jaspreet ne 3 ladko ko PB IO DA 6677 tractor trolley mein jaate dekha. Ek ladke ka naam Lovely bataya. Dhara 379 IPC.
+Jaanch ASI Kuldeep Singh
+---expect---
+field district: Ludhiana
+field police_station: Model Town
+field fir_number: 0019/2026
+field fir_date: 2026-06-30
+field complainant: Balwinder Singh
+field investigating_officer: Kuldeep Singh
+entity PHONE: 9814055566
+entity VEHICLE: PB10DA6677
+entity AMOUNT: 40000
+entity DATE: 2026-06-30
+entity DATE: 2026-06-29
+entity SECTION: IPC:379
+person: Balwinder Singh | COMPLAINANT
+person: Gurdev Singh | RELATIVE
+person: Jaspreet | WITNESS
+person: Lovely | ACCUSED
+person: Kuldeep Singh | INVESTIGATING_OFFICER
+rel: Balwinder Singh | OWNS | 9814055566
+---end---

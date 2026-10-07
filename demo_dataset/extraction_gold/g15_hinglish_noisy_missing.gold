@@ -1,0 +1,34 @@
+id: g15
+split: dev
+lang: Hinglish
+tags: romanised,noisy,missing-person
+---text---
+thana - Kotwali   zila - Bhopal   FIR no. 0455/2O26
+dinank 07 / 09 / 2026    samay 2O:3O baje
+Gumshuda ki report
+Shikayatkarta Ram Prakash Dubey pita Shri Hari Prakash Dubey, mob no 94O7 123 456.
+Meri beti Ritu Dubey umra 17 saal, kad 5 feet, ne rang gehua, 06/09/2026 ko subah 8 baje school jane ke liye ghar se nikli lekin waapas nahi aayi. Shak hai ki Kamal Rajput (pados ka ladka) ne use bahla fusla kar le gaya hai. Uska number 7OO 111 2222 hai. Kamal ke paas MP O4 ZC 5O12 bike hai.
+Dhara 363 IPC
+IO: ASI Prem Singh
+---expect---
+field fir_number: 0455/2026
+field district: Bhopal
+field police_station: Kotwali
+field fir_date: 2026-09-07
+field complainant: Ram Prakash Dubey
+field investigating_officer: Prem Singh
+entity PHONE: 9407123456
+entity PHONE: 7001112222
+entity VEHICLE: MP04ZC5012
+entity DATE: 2026-09-07
+entity DATE: 2026-09-06
+entity SECTION: IPC:363
+person: Ram Prakash Dubey | COMPLAINANT
+person: Hari Prakash Dubey | RELATIVE
+person: Ritu Dubey | VICTIM
+person: Kamal Rajput | ACCUSED
+person: Prem Singh | INVESTIGATING_OFFICER
+rel: Kamal Rajput | USED | MP04ZC5012
+rel: Kamal Rajput | OWNS | 7001112222
+rel: Ram Prakash Dubey | OWNS | 9407123456
+---end---

@@ -1,0 +1,40 @@
+id: g07
+split: dev
+lang: Marathi
+tags: devanagari,marathi
+---text---
+प्रथम माहिती अहवाल
+जिल्हा: नाशिक पोलीस ठाणे: सातपूर वर्ष: 2026 एफआयआर क्रमांक: 0215/2026
+दिनांक: 09/05/2026 वेळ: 09:45
+कलम: 379, 34 भा.दं.वि.
+तक्रारदार: सुनील पाटील
+वडिलांचे नाव: भाऊसाहेब पाटील
+पत्ता: प्लॉट 22, त्रिमूर्ती चौक, नाशिक
+मोबाईल: 9922334455
+घटनेचे ठिकाण: सातपूर एमआयडीसी, नाशिक
+आरोपी: अज्ञात व्यक्ती काळ्या दुचाकीवर
+घटनेचे वर्णन: दिनांक 08/05/2026 रोजी तक्रारदाराची मोटारसायकल MH15 CD 4589 पार्किंगमधून चोरीस गेली. साक्षीदार राजू शिंदे यांनी एका व्यक्तीला दुचाकी घेऊन जाताना पाहिले. किंमत सुमारे 45,000 रुपये.
+तपास अधिकारी: पोलीस उपनिरीक्षक अनिता जाधव
+---expect---
+field fir_number: 0215/2026
+field district: नाशिक
+field police_station: सातपूर
+field fir_date: 2026-05-09
+field fir_time: 09:45
+field complainant: सुनील पाटील
+field investigating_officer: अनिता जाधव
+entity PHONE: 9922334455
+entity VEHICLE: MH15CD4589
+entity AMOUNT: 45000
+entity DATE: 2026-05-09
+entity DATE: 2026-05-08
+entity SECTION: IPC:379
+entity SECTION: IPC:34
+person: सुनील पाटील | COMPLAINANT
+person: भाऊसाहेब पाटील | RELATIVE
+person: राजू शिंदे | WITNESS
+person: अनिता जाधव | INVESTIGATING_OFFICER
+translate: motorcycle
+translate: Nashik
+rel: सुनील पाटील | OWNS | 9922334455
+---end---

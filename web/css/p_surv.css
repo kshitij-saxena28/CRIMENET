@@ -1,0 +1,34 @@
+/* Surveillance reports (f_surveillance.js). All rules are prefixed sv-. Colours come from theme tokens only. */
+.sv-page{display:flex;flex-direction:column;gap:1rem}
+.sv-head h2{margin:0 0 .3rem}
+.sv-title{align-items:center;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 .2rem}
+.sv-title h2{margin:0}
+.sv-body{display:flex;flex-direction:column;gap:1rem;min-width:0}
+.sv-line{margin:.2rem 0 .6rem}
+.sv-cta{gap:.6rem;flex-wrap:wrap;margin-bottom:.8rem}
+.sv-explain{margin:.4rem 0;font-size:.86rem}
+.sv-explain summary{cursor:pointer;color:var(--accent2)}
+.sv-explain p,.sv-explain ul{margin:.4rem 0 .2rem}
+.sv-badge{display:inline-flex;align-items:center;gap:.35rem;padding:.2rem .65rem;border-radius:999px;font-size:.82rem;font-weight:600;border:1px solid var(--line2)}
+.sv-ok{color:var(--good);border-color:var(--good)}
+.sv-broken{color:var(--bad);border-color:var(--bad);background:var(--panel2)}
+.sv-hash{overflow-wrap:anywhere;font-size:.8rem}
+.sv-log{display:flex;flex-direction:column;gap:.7rem}
+.sv-entry{display:flex;flex-direction:column;gap:.4rem;padding:.7rem .9rem;background:var(--panel2);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r-sm)}
+.sv-entry.sv-old{opacity:.6;border-left-color:var(--line2)}
+.sv-entry.sv-outside{border-left-color:var(--bad)}
+.sv-entry-top{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.sv-entry-foot{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.sv-place{margin:0;font-weight:600}
+.sv-text{margin:0;overflow-wrap:anywhere;white-space:pre-wrap}
+.sv-chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.sv-check{display:flex;flex-direction:row!important;align-items:center;gap:.4rem;color:var(--text)}
+.sv-map{height:380px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--panel2)}
+.sv-route{width:100%;height:100%}
+.sv-routeline{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:6 4}
+.sv-pt{fill:var(--accent2);stroke:var(--bg);stroke-width:1.5}
+.sv-move{display:flex;flex-direction:column;gap:1rem}
+.sv-sent{margin:.3rem 0 .8rem;padding-left:1.1rem}
+.sv-sent li{margin:.3rem 0}
+.sv-rep{display:flex;flex-direction:column;gap:.4rem;padding:.7rem;background:var(--panel2);border:1px solid var(--line);border-radius:var(--r-sm)}
+button.link{background:none;border:0;padding:0;color:var(--accent2);cursor:pointer;text-decoration:underline;font:inherit}

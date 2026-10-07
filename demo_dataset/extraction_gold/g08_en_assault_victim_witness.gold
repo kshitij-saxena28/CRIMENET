@@ -1,0 +1,43 @@
+id: g08
+split: dev
+lang: English
+tags: clean,roles
+---text---
+FIR No. 512/2025        Police Station: Sector 20, Noida        District: Gautam Buddh Nagar
+Date: 28 November 2025    Time: 22:10
+Sections: IPC 323, 324, 506, 34
+
+Informant: Mr. Deepak Chauhan, s/o Late Harbans Singh Chauhan, r/o B-14, Sector 22, Noida, contact 8826001122.
+
+The informant states that on 27.11.2025 at about 8 PM near Sector 20 Market his younger brother Vishal Chauhan (victim) was beaten with iron rods by Gaurav Bhati and his associates Lalit and Pintu. Gaurav Bhati threatened to kill Vishal. Vishal was rushed to Kailash Hospital by eyewitness Suresh Pal and MLC was conducted. The accused fled in a white Swift Dzire car number UP16 BX 9021. Accused Gaurav Bhati is known to use mobile 9899887766. Medical expenses were Rs 32,000.
+Investigating Officer: Inspector Ravi Malik
+---expect---
+field fir_number: 512/2025
+field district: Gautam Buddh Nagar
+field police_station: Sector 20, Noida
+field fir_date: 2025-11-28
+field fir_time: 22:10
+field complainant: Deepak Chauhan
+field investigating_officer: Ravi Malik
+entity PHONE: 8826001122
+entity PHONE: 9899887766
+entity VEHICLE: UP16BX9021
+entity AMOUNT: 32000
+entity DATE: 2025-11-28
+entity DATE: 2025-11-27
+entity SECTION: IPC:323
+entity SECTION: IPC:324
+entity SECTION: IPC:506
+entity SECTION: IPC:34
+person: Deepak Chauhan | COMPLAINANT
+person: Harbans Singh Chauhan | RELATIVE
+person: Vishal Chauhan | VICTIM
+person: Gaurav Bhati | ACCUSED
+person: Lalit | ACCUSED
+person: Pintu | ACCUSED
+person: Suresh Pal | WITNESS
+person: Ravi Malik | INVESTIGATING_OFFICER
+rel: Gaurav Bhati | USED | UP16BX9021
+rel: Gaurav Bhati | OWNS | 9899887766
+rel: Deepak Chauhan | OWNS | 8826001122
+---end---

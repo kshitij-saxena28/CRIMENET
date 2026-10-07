@@ -1,0 +1,33 @@
+id: g06
+split: dev
+lang: Hindi
+tags: devanagari,bns
+---text---
+थाना: कोतवाली नगर, जिला: जयपुर
+एफआईआर नं: 88/2026 दिनांक 02 अक्टूबर 2026
+भारतीय न्याय संहिता की धारा 303(2), 309(4)
+शिकायतकर्ता: मोहन लाल शर्मा, पुत्र गोविंद शर्मा, निवासी 14 मालवीय नगर, जयपुर। फोन: +91-94140-55667
+घटना: दिनांक 1 अक्टूबर 2026 को रात लगभग 9 बजे मैं अपनी दुकान बंद करके घर जा रहा था। तभी दो अज्ञात युवकों ने मुझे रोककर चाकू दिखाया और मेरा बैग छीन लिया जिसमें ₹85,000 नकद और मोबाइल था। वे लोग काली बाइक RJ 14 SK 7788 पर भाग गए। मेरे पड़ोसी दिनेश जांगिड़ ने यह घटना देखी।
+जांच अधिकारी: सब इंस्पेक्टर हरीश मीणा
+---expect---
+field fir_number: 88/2026
+field district: जयपुर
+field police_station: कोतवाली नगर
+field fir_date: 2026-10-02
+field complainant: मोहन लाल शर्मा
+field investigating_officer: हरीश मीणा
+entity PHONE: 9414055667
+entity VEHICLE: RJ14SK7788
+entity AMOUNT: 85000
+entity DATE: 2026-10-02
+entity DATE: 2026-10-01
+entity SECTION: BNS:303
+entity SECTION: BNS:309
+person: मोहन लाल शर्मा | COMPLAINANT
+person: गोविंद शर्मा | RELATIVE
+person: दिनेश जांगिड़ | WITNESS
+person: हरीश मीणा | INVESTIGATING_OFFICER
+translate: knife
+translate: snatched
+rel: मोहन लाल शर्मा | OWNS | 9414055667
+---end---

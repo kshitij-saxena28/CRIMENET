@@ -1,0 +1,44 @@
+id: g05
+split: dev
+lang: Hindi
+tags: devanagari,devnagari-digits
+---text---
+प्रथम सूचना रिपोर्ट
+जिला: लखनऊ थाना: हजरतगंज वर्ष: २०२६ एफआईआर क्रमांक: ०३१२/२०२६
+दिनांक: १५/०६/२०२६ समय: ११:३० बजे
+धारा: ४२० भादंवि, ४६७, ४६८
+घटना का स्थान: हजरतगंज चौराहा, लखनऊ
+शिकायतकर्ता: श्रीमती कमला देवी
+पिता का नाम: श्री रामप्रसाद वर्मा
+पता: मकान नं ७, अलीगंज, लखनऊ
+मोबाइल: ९४१५०१२३४५
+आरोपी: विनोद कुमार पुत्र सुरेश कुमार, निवासी आशियाना, लखनऊ
+घटना का विवरण: शिकायतकर्ता ने बताया कि दिनांक १० जून २०२६ को आरोपी विनोद कुमार ने जमीन बेचने के नाम पर ₹५,००,००० लेकर धोखाधड़ी की। पैसे खाता संख्या ३२१०९८७६५४३२ में जमा कराए गए थे। गवाह अशोक मिश्रा मौजूद थे।
+जांच अधिकारी: उपनिरीक्षक संजय पांडेय
+---expect---
+field fir_number: 0312/2026
+field year: 2026
+field district: लखनऊ
+field police_station: हजरतगंज
+field fir_date: 2026-06-15
+field fir_time: 11:30
+field complainant: कमला देवी
+field investigating_officer: संजय पांडेय
+entity PHONE: 9415012345
+entity ACCOUNT: 321098765432
+entity AMOUNT: 500000
+entity DATE: 2026-06-15
+entity DATE: 2026-06-10
+entity SECTION: IPC:420
+entity SECTION: IPC:467
+entity SECTION: IPC:468
+person: कमला देवी | COMPLAINANT
+person: रामप्रसाद वर्मा | RELATIVE
+person: विनोद कुमार | ACCUSED
+person: सुरेश कुमार | RELATIVE
+person: अशोक मिश्रा | WITNESS
+person: संजय पांडेय | INVESTIGATING_OFFICER
+translate: fraud
+translate: Lucknow
+rel: कमला देवी | OWNS | 9415012345
+---end---

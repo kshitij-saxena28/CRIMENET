@@ -1,0 +1,31 @@
+id: g11
+split: dev
+lang: Bengali
+tags: bengali,identifiers
+---text---
+প্রথম তথ্য প্রতিবেদন
+জেলা: কলকাতা থানা: নিউ মার্কেট এফআইআর নং: 145/2026
+তারিখ: 18/07/2026
+ধারা: 379, 411 IPC
+অভিযোগকারী: সুমন দাস
+পিতার নাম: গোপাল দাস
+ঠিকানা: 22 ভবানীপুর, কলকাতা
+মোবাইল: 9830012345
+ঘটনার বিবরণ: গত 17/07/2026 তারিখে নিউ মার্কেট এলাকা থেকে অভিযোগকারীর মোবাইল ফোন চুরি হয়েছে। মূল্য 18,000 টাকা। অভিযুক্ত WB 02 AK 5566 নম্বরের স্কুটারে পালিয়ে যায়।
+তদন্তকারী কর্মকর্তা: এসআই দেবাশীষ ঘোষ
+---expect---
+field fir_number: 145/2026
+field fir_date: 2026-07-18
+entity PHONE: 9830012345
+entity VEHICLE: WB02AK5566
+entity AMOUNT: 18000
+entity DATE: 2026-07-18
+entity DATE: 2026-07-17
+entity SECTION: IPC:379
+entity SECTION: IPC:411
+translate: Kolkata
+person: সুমন দাস | COMPLAINANT
+person: গোপাল দাস | RELATIVE
+person: দেবাশীষ ঘোষ | INVESTIGATING_OFFICER
+rel: সুমন দাস | OWNS | 9830012345
+---end---

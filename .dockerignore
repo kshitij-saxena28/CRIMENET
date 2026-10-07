@@ -1,0 +1,22 @@
+# runtime state - never commit
+*.db
+*.sqlite3
+.env
+.runtime_secret
+initial_credentials.txt
+evidence_store/*
+!evidence_store/.gitkeep
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+.git
+demo_dataset/ocr_fir_samples
+*.md
+!README.md

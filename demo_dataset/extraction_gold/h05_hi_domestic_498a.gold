@@ -1,0 +1,36 @@
+id: h05
+split: heldout
+lang: Hindi
+tags: devanagari,domestic
+---text---
+थाना: महिला थाना, जिला: इंदौर
+एफआईआर क्रमांक: 142/2026    दिनांक: 11/04/2026
+धारा 498क, 323, 506 भा.दं.वि. एवं दहेज प्रतिषेध अधिनियम की धारा 3
+पीड़िता/शिकायतकर्ता: सीमा राठौर पुत्री कैलाश राठौर, उम्र 27 वर्ष। मोबाइल 7898001234।
+आरोपी: पति नितिन राठौर, सास कमला राठौर तथा ननद पूजा राठौर। शादी दिनांक 12 फरवरी 2023 को हुई थी। ससुराल वाले दहेज में 5 लाख रुपये तथा कार की मांग करते हैं और मारपीट करते हैं। दिनांक 09/04/2026 को नितिन ने डंडे से मारा। गवाह पड़ोसी अनिल तिवारी है।
+जांच अधिकारी: सहायक उपनिरीक्षक ममता चौहान
+---expect---
+field district: इंदौर
+field fir_number: 142/2026
+field fir_date: 2026-04-11
+field complainant: सीमा राठौर
+field investigating_officer: ममता चौहान
+entity PHONE: 7898001234
+entity AMOUNT: 500000
+entity DATE: 2026-04-11
+entity DATE: 2023-02-12
+entity DATE: 2026-04-09
+entity SECTION: IPC:498A
+entity SECTION: IPC:323
+entity SECTION: IPC:506
+person: सीमा राठौर | COMPLAINANT
+person: कैलाश राठौर | RELATIVE
+person: नितिन राठौर | ACCUSED
+person: कमला राठौर | ACCUSED
+person: पूजा राठौर | ACCUSED
+person: अनिल तिवारी | WITNESS
+person: ममता चौहान | INVESTIGATING_OFFICER
+translate: dowry
+entity SECTION: DOWRY:3
+rel: सीमा राठौर | OWNS | 7898001234
+---end---

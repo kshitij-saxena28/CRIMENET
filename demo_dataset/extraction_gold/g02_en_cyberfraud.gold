@@ -1,0 +1,39 @@
+id: g02
+split: dev
+lang: English
+tags: clean,cyber,financial
+---text---
+To,
+The Station House Officer,
+Cyber Crime Police Station, Bengaluru City
+
+Subject: Complaint regarding online fraud of Rs. 1,45,000
+
+Sir,
+I, Priya Nair, aged 34, W/o Anil Nair, resident of 12, 4th Cross, Indiranagar, Bengaluru, submit that on 03 March 2026 I received a call from mobile number 9900112233 from a person who introduced himself as an executive of HDFC Bank and said my KYC would expire. He sent a link and asked for my Aadhaar 2345 6789 0124 and PAN BXQPN4821K. Thereafter Rs 1,45,000 was debited from my account number 50100234567891 (IFSC HDFC0001234) on 03/03/2026 at 16:42 hrs. The amount was transferred to UPI ID ramesh.kumar88@okaxis and later to account 917020045612345 of Axis Bank. The caller also emailed me from support.hdfc.verify@gmail.com. The suspect used the name Ramesh Kumar. Transaction ID 604512398712.
+I request registration of FIR under Section 66C, 66D of the IT Act and Section 318(4) BNS.
+Yours faithfully,
+Priya Nair
+Mobile: 098450 11223
+---expect---
+field complainant: Priya Nair
+entity PHONE: 9900112233
+entity PHONE: 9845011223
+entity AADHAAR: 234567890124
+entity PAN: BXQPN4821K
+entity ACCOUNT: 50100234567891
+entity ACCOUNT: 917020045612345
+entity IFSC: HDFC0001234
+entity UPI: ramesh.kumar88@okaxis
+entity EMAIL: support.hdfc.verify@gmail.com
+entity AMOUNT: 145000
+entity DATE: 2026-03-03
+entity SECTION: IT:66C
+entity SECTION: IT:66D
+entity SECTION: BNS:318
+person: Priya Nair | COMPLAINANT
+person: Anil Nair | RELATIVE
+person: Ramesh Kumar | ACCUSED
+rel: Ramesh Kumar | OWNS | ramesh.kumar88@okaxis
+rel: Priya Nair | OWNS | 9845011223
+---end---

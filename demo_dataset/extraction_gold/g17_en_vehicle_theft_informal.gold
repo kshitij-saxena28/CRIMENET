@@ -1,0 +1,21 @@
+id: g17
+split: dev
+lang: English
+tags: informal,complaint
+---text---
+Complaint
+
+To: SHO, Vasant Kunj (South) PS, New Delhi.
+
+Respected Sir, I am Kiran Bedi (mrs.), residing at C-9/12 Vasant Kunj. On the intervening night of 4th and 5th January 2026 my Maruti Swift, registration DL 10 CE 6045, was stolen from outside my house. I have parked it at 10 pm and found it missing at 6.30 am. The car had a FASTag and my driving licence. CCTV of my neighbour Mr. Arvind Kejri shows two men opening the car. Insurance IDV is about Rs 4,75,000. Please register case. Contact: 011-26123456 / 9999 888 777.
+Kiran Bedi
+---expect---
+field complainant: Kiran Bedi
+entity PHONE: 9999888777
+entity VEHICLE: DL10CE6045
+entity AMOUNT: 475000
+entity DATE: 2026-01-04
+entity DATE: 2026-01-05
+person: Kiran Bedi | COMPLAINANT
+person: Arvind Kejri | WITNESS
+---end---

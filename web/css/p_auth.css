@@ -1,0 +1,12 @@
+/* Styles for the demo switch (web/js/demo_toggle.js) and account-request pages. Prefix: au- */
+.au-demo { display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; font-size: .85rem; user-select: none; }
+.au-demo-input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.au-demo-track { position: relative; width: 2.4rem; height: 1.3rem; border-radius: 999px; background: var(--border, #64748b); transition: background .2s; flex: none; }
+.au-demo-knob { position: absolute; top: .15rem; left: .15rem; width: 1rem; height: 1rem; border-radius: 50%; background: #fff; transition: transform .2s; }
+.au-demo-input:checked + .au-demo-track { background: var(--accent, #4f7cff); }
+.au-demo-input:checked + .au-demo-track .au-demo-knob { transform: translateX(1.1rem); }
+.au-demo-input:focus-visible + .au-demo-track { outline: 2px solid var(--accent, #4f7cff); outline-offset: 2px; }
+.au-demo-input:disabled + .au-demo-track { opacity: .5; cursor: not-allowed; }
+.au-demo-name { font-weight: 600; }
+.au-demo-state { color: var(--muted, #94a3b8); }
+@media (prefers-reduced-motion: reduce) { .au-demo-track, .au-demo-knob { transition: none; } }

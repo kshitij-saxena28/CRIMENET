@@ -1,0 +1,21 @@
+FIRST INFORMATION REPORT
+[SYNTHETIC SAMPLE - fictional data for demonstration only]
+District: Lucknow
+Police Station: Hazratganj
+Year: 2026
+FIR No: 0205/2026
+Date of FIR: 08/09/2026
+Time: 11:15 hrs
+Acts & Sections: Section 420, 34 IPC; Section 66C, 66D IT Act
+Place of Occurrence: SBI ATM kiosk, Hazratganj, Lucknow
+Complainant / Informant:
+Name: Arvind Mishra
+Father's Name: Hari Mishra
+Address: Aliganj, Lucknow
+Accused: Unknown persons
+Details of Properties Stolen / Involved:
+Rs 48,000 withdrawn without consent from bank account
+Account: ACCT-778812
+Phone: 9811100033
+Short Description of Incident: The complainant found several unauthorised withdrawals from his bank account within an hour, although his debit card was with him. A card skimmer device and a small hidden camera were later found fixed on the ATM kiosk. The card appears to have been cloned.
+Investigating Officer: Inspector Ravi Saxena

@@ -1,0 +1,26 @@
+id: h10
+split: heldout
+lang: Telugu
+tags: telugu,identifiers
+---text---
+మొదటి సమాచార నివేదిక
+జిల్లా: విశాఖపట్నం పోలీస్ స్టేషన్: గాజువాక ఎఫ్‌ఐఆర్ నంబర్: 254/2026
+తేదీ: 19/11/2026
+సెక్షన్: 420, 468 IPC
+ఫిర్యాదుదారు: కృష్ణ మూర్తి
+మొబైల్: 9989012345
+వివరాలు: 17/11/2026 న ఫిర్యాదుదారుని నుండి 2,75,000 రూపాయలు మోసం చేయబడ్డాయి. నిందితుడు AP 31 CZ 4455 కారులో పారిపోయాడు.
+---expect---
+field fir_number: 254/2026
+field fir_date: 2026-11-19
+entity PHONE: 9989012345
+entity VEHICLE: AP31CZ4455
+entity AMOUNT: 275000
+entity DATE: 2026-11-19
+entity DATE: 2026-11-17
+entity SECTION: IPC:420
+entity SECTION: IPC:468
+translate: Visakhapatnam
+person: కృష్ణ మూర్తి | COMPLAINANT
+rel: కృష్ణ మూర్తి | OWNS | 9989012345
+---end---

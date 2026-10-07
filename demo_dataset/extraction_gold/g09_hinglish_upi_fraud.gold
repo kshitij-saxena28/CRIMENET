@@ -1,0 +1,24 @@
+id: g09
+split: dev
+lang: Hinglish
+tags: romanised,cyber
+---text---
+Sewa mein, Thana Prabhari, Cyber Cell, Mumbai
+Vishay: Online thagi ki shikayat
+
+Main Amit Shah, pita ka naam Kishore Shah, Andheri West Mumbai ka nivasi hoon. Dinank 5/4/2026 ko mujhe OLX par bike bechne ke naam par ek vyakti ne phone kiya, number +91 70 4455 6677. Usne kaha ki wo Army mein hai aur advance ke liye PhonePe QR scan karne ko kaha. Maine UPI ID armyjawan.raj@ybl par Rs. 25,000 bheje aur phir 15000 aur bheje. Dono transaction 5 April 2026 ko hue. Uska bank account SBI mein hai A/C No. 3456 7812 9087 IFSC SBIN0004321. Ab wo phone nahi utha raha. Mera aadhaar 3456 7890 1238 hai.
+Kripya FIR darj karein.
+Amit Shah
+---expect---
+field complainant: Amit Shah
+entity PHONE: 7044556677
+entity UPI: armyjawan.raj@ybl
+entity AMOUNT: 25000
+entity AMOUNT: 15000
+entity ACCOUNT: 345678129087
+entity IFSC: SBIN0004321
+entity AADHAAR: 345678901238
+entity DATE: 2026-04-05
+person: Amit Shah | COMPLAINANT
+person: Kishore Shah | RELATIVE
+---end---

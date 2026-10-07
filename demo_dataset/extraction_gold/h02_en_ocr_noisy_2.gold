@@ -1,0 +1,39 @@
+id: h02
+split: heldout
+lang: English
+tags: noisy,ocr
+---text---
+F|RST INFORMAT|ON REPORT
+D1strict: Nagpur   P.S: Sitabuldi   Year: 2O25   FIR No: 1O44/2O25
+Date of FlR: O3/12/2O25    T1me: 23:5O hrs
+Acts & Sectlons: IPC 420, 406
+Complainant: Mrs. Anjali Kulkarni, W/o Mahesh Kulkarni
+Mob: 8O87 66 5544
+Accused: Rakesh Bhosale and his firm M/s Bhosale Traders
+Facts: The complainant paid Rs. 3,5O,OOO to the accused on 15/O9/2025 for supply of goods; amount was deposited in ICIC1 account no. 0O1234567890 (IFSC ICIC0000045). No goods were delivered. Accused car MH 31 DK 7O01.
+I0: PI Suresh Wagh
+---expect---
+field district: Nagpur
+field police_station: Sitabuldi
+field year: 2025
+field fir_number: 1044/2025
+field fir_date: 2025-12-03
+field fir_time: 23:50
+field complainant: Anjali Kulkarni
+field investigating_officer: Suresh Wagh
+entity PHONE: 8087665544
+entity VEHICLE: MH31DK7001
+entity AMOUNT: 350000
+entity ACCOUNT: 001234567890
+entity IFSC: ICIC0000045
+entity DATE: 2025-12-03
+entity DATE: 2025-09-15
+entity SECTION: IPC:420
+entity SECTION: IPC:406
+person: Anjali Kulkarni | COMPLAINANT
+person: Mahesh Kulkarni | RELATIVE
+person: Rakesh Bhosale | ACCUSED
+person: Suresh Wagh | INVESTIGATING_OFFICER
+rel: Anjali Kulkarni | OWNS | 8087665544
+rel: Rakesh Bhosale | USED | MH31DK7001
+---end---

@@ -1,0 +1,36 @@
+id: h04
+split: heldout
+lang: Hindi
+tags: devanagari,devnagari-digits,cyber
+---text---
+प्रथम सूचना रिपोर्ट
+जिला: पटना थाना: कंकड़बाग वर्ष: २०२६ एफआईआर नं: ०५६७/२०२६
+दिनांक: २८/०७/२०२६ समय: १६:२० बजे
+धारा: ६६डी आईटी एक्ट, ४२० आईपीसी
+शिकायतकर्ता: अजय कुमार सिन्हा पिता श्री रघुवीर सिन्हा
+पता: कंकड़बाग कॉलोनी, पटना। मोबाइल नंबर: ९४३१ ००२ २३४
+घटना: दिनांक २६ जुलाई २०२६ को अज्ञात व्यक्ति ने खुद को बिजली विभाग का अधिकारी बताकर फोन नंबर 8102345678 से कॉल किया और बिजली कनेक्शन कटने का डर दिखाकर एक लिंक भेजा। लिंक खोलते ही मेरे SBI खाते से ₹९८,५०० कट गए। पैसे UPI आईडी helpdesk.bijli@okicici में गए।
+जांच अधिकारी: इंस्पेक्टर नीलम कुमारी
+---expect---
+field district: पटना
+field police_station: कंकड़बाग
+field year: 2026
+field fir_number: 0567/2026
+field fir_date: 2026-07-28
+field fir_time: 16:20
+field complainant: अजय कुमार सिन्हा
+field investigating_officer: नीलम कुमारी
+entity PHONE: 9431002234
+entity PHONE: 8102345678
+entity UPI: helpdesk.bijli@okicici
+entity AMOUNT: 98500
+entity DATE: 2026-07-28
+entity DATE: 2026-07-26
+entity SECTION: IT:66D
+entity SECTION: IPC:420
+person: अजय कुमार सिन्हा | COMPLAINANT
+person: रघुवीर सिन्हा | RELATIVE
+person: नीलम कुमारी | INVESTIGATING_OFFICER
+translate: Patna
+translate: link
+---end---

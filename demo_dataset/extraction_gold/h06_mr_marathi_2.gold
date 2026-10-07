@@ -1,0 +1,35 @@
+id: h06
+split: heldout
+lang: Marathi
+tags: devanagari,marathi
+---text---
+जिल्हा: ठाणे पोलीस ठाणे: कल्याण (पश्चिम) वर्ष: 2026 गुन्हा रजिस्टर क्रमांक: 0331/2026
+दिनांक: 14/08/2026 वेळ: 21:05
+कलम 420, 34 भा.दं.वि. तसेच कलम 66 (क) माहिती तंत्रज्ञान कायदा
+फिर्यादी: प्रिया कदम, वडिलांचे नाव: विजय कदम, राहणार: सुभाष रोड, कल्याण. मोबाईल: 9769 112 233
+आरोपी: राहुल गायकवाड (मोबाईल 8898445566)
+वर्णन: दिनांक 10/08/2026 रोजी आरोपीने फिर्यादीला नोकरी लावून देतो असे सांगून 1,20,000 रुपये घेतले. रक्कम खाते क्रमांक 0912345678 मध्ये जमा केली. साक्षीदार: संगीता पवार.
+तपास अधिकारी: सहायक पोलीस निरीक्षक दीपक मोरे
+---expect---
+field district: ठाणे
+field fir_date: 2026-08-14
+field complainant: प्रिया कदम
+field investigating_officer: दीपक मोरे
+entity PHONE: 9769112233
+entity PHONE: 8898445566
+entity ACCOUNT: 0912345678
+entity AMOUNT: 120000
+entity DATE: 2026-08-14
+entity DATE: 2026-08-10
+entity SECTION: IPC:420
+entity SECTION: IPC:34
+person: प्रिया कदम | COMPLAINANT
+person: विजय कदम | RELATIVE
+person: राहुल गायकवाड | ACCUSED
+person: संगीता पवार | WITNESS
+person: दीपक मोरे | INVESTIGATING_OFFICER
+translate: Thane
+entity SECTION: IT:66
+rel: प्रिया कदम | OWNS | 9769112233
+rel: राहुल गायकवाड | OWNS | 8898445566
+---end---

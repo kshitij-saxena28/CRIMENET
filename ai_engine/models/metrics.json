@@ -1,0 +1,24 @@
+{
+  "entity_context": {
+    "split": "stratified 80/20 hold-out",
+    "train_samples": 2160,
+    "test_samples": 540,
+    "accuracy": 0.9963,
+    "macro_f1": 0.996,
+    "per_class_f1": {
+      "ACCOUNT": 1.0,
+      "CASE": 1.0,
+      "DATE": 0.9901,
+      "DIGITAL_IDENTIFIER": 1.0,
+      "LOCATION": 0.9899,
+      "ORGANIZATION": 0.9899,
+      "PERSON": 1.0,
+      "PHONE": 1.0,
+      "TIME": 0.9901,
+      "VEHICLE": 1.0
+    },
+    "exact_test_texts_also_in_train": 0,
+    "unique_test_texts": 540,
+    "caveat": "Synthetic templated data: optimistic upper bound, not real-world accuracy."
+  }
+}

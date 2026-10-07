@@ -1,0 +1,980 @@
+{
+ "note": "Synthetic posts written by the developers. 'dev' posts were used while writing the lexicon; 'heldout' posts were written after the lexicon was frozen and never used to tune it.",
+ "posts": [
+  {
+   "id": "dev001",
+   "split": "dev",
+   "text": "Listen carefully. I will kill you if you come near my sister again.",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev002",
+   "split": "dev",
+   "text": "tujhe jaan se maar dunga, bas ek baar samne aa",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev003",
+   "split": "dev",
+   "text": "अगर बोला तो तुझे जान से मार दूंगा, समझा?",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev004",
+   "split": "dev",
+   "text": "I know where you live. Your kids take the 7:40 school bus, right?",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev005",
+   "split": "dev",
+   "text": "Someone should blow up the station tomorrow at 6, teach them all a lesson",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev006",
+   "split": "dev",
+   "text": "गोली मार दूँगा अगर दुबारा फोन किया",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "dev007",
+   "split": "dev",
+   "text": "Send 50000 by tonight or I will leak your private videos to everyone in your contacts.",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "dev008",
+   "split": "dev",
+   "text": "paise nahi diye toh tumhari video viral kar dunga, socho",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "dev009",
+   "split": "dev",
+   "text": "पैसे नहीं दिए तो तुम्हारी वीडियो वायरल कर दूंगा",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "dev010",
+   "split": "dev",
+   "text": "I have your nude video. Pay 20000 or I will post it.",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "dev011",
+   "split": "dev",
+   "text": "Congratulations! You won the lottery of 25 lakh. Pay processing fee to claim your prize today.",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev012",
+   "split": "dev",
+   "text": "Invest 10000 and double your money in 7 days. Guaranteed returns. WhatsApp me.",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev013",
+   "split": "dev",
+   "text": "Sir your KYC update pending, click link http://sbi-kyc.example/upd or your account will be blocked",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev014",
+   "split": "dev",
+   "text": "bhai OTP batao jaldi, refund process karna hai",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev015",
+   "split": "dev",
+   "text": "घर बैठे कमाओ 5000 रोज़, बस लिंक क्लिक करो",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev016",
+   "split": "dev",
+   "text": "Part time job: like YouTube videos and earn Rs 500 per task. Join telegram",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev017",
+   "split": "dev",
+   "text": "Send 0.5 BTC to this wallet and get 1 BTC back, official giveaway",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev018",
+   "split": "dev",
+   "text": "paise double karo 5 din me, guaranteed profit, sirf 500 se start",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "dev019",
+   "split": "dev",
+   "text": "Kill all the migrants, they don't belong here. Gather at the chowk at 9.",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "dev020",
+   "split": "dev",
+   "text": "सभी घुसपैठियों को मार भगाओ",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "dev021",
+   "split": "dev",
+   "text": "sab mulle ko maro, ek bhi nahi bachna chahiye",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "dev022",
+   "split": "dev",
+   "text": "Burn their shops tonight, those people have no place in our colony",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "dev023",
+   "split": "dev",
+   "text": "MDMA and charas available in Goa, home delivery, DM for rates",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "dev024",
+   "split": "dev",
+   "text": "Country made pistol available, no license needed, 12 bore also in stock, dm",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "dev025",
+   "split": "dev",
+   "text": "गांजा उपलब्ध है, रेट के लिए संपर्क करें",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "dev026",
+   "split": "dev",
+   "text": "katta milega bina license, delivery Bihar tak",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "dev027",
+   "split": "dev",
+   "text": "mephedrone ready stock, cod, bulk order welcome",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "dev028",
+   "split": "dev",
+   "text": "I can't do this anymore. I am going to end my life tonight.",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "dev029",
+   "split": "dev",
+   "text": "aaj raat sab khatam. main jeena nahi chahta ab",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "dev030",
+   "split": "dev",
+   "text": "मैं आत्महत्या कर लूंगा, कोई फर्क नहीं पड़ता",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "dev031",
+   "split": "dev",
+   "text": "I will hang myself if she doesn't come back",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "dev032",
+   "split": "dev",
+   "text": "URGENT: kidnappers gang spotted in your area, forward to all groups",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "dev033",
+   "split": "dev",
+   "text": "Share before it gets deleted!! Forward to everyone, save your family, gas leak in the city",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "dev034",
+   "split": "dev",
+   "text": "बच्चा चोर गिरोह सक्रिय है हमारे इलाके में, सबको शेयर करें",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "dev035",
+   "split": "dev",
+   "text": "kal se ATM band, sab paise nikal lo, urgent forward",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "dev036",
+   "split": "dev",
+   "text": "Breaking: milk poisoned in the local market, do not buy, share with everyone",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "dev037",
+   "split": "dev",
+   "text": "Pay me 30000 or I will kill you and post your videos",
+   "labels": [
+    "threat_violence",
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "dev038",
+   "split": "dev",
+   "text": "Kohli is going to murder this bowling attack tonight #INDvAUS",
+   "labels": []
+  },
+  {
+   "id": "dev039",
+   "split": "dev",
+   "text": "We will kill them in the semi-final, mark my words, Rohit will destroy them",
+   "labels": []
+  },
+  {
+   "id": "dev040",
+   "split": "dev",
+   "text": "Bumrah killed it today! What a spell, absolutely destroyed the batting line-up",
+   "labels": []
+  },
+  {
+   "id": "dev041",
+   "split": "dev",
+   "text": "aaj toh chhakka maar dunga last over mein, dekhna",
+   "labels": []
+  },
+  {
+   "id": "dev042",
+   "split": "dev",
+   "text": "Tu dekh, kal match mein tujhe dekh lunga, pitch pe",
+   "labels": []
+  },
+  {
+   "id": "dev043",
+   "split": "dev",
+   "text": "I'll beat you at chess tomorrow, prepare to lose",
+   "labels": []
+  },
+  {
+   "id": "dev044",
+   "split": "dev",
+   "text": "Gamers: 'you are dead meat' - enemy squad rushing B site lol",
+   "labels": []
+  },
+  {
+   "id": "dev045",
+   "split": "dev",
+   "text": "Song lyrics: 'jaan se maar dega tu mujhe apni adaon se' 🎵 what a track",
+   "labels": []
+  },
+  {
+   "id": "dev046",
+   "split": "dev",
+   "text": "New song out! I'd kill for you tonight 🎶 streaming now",
+   "labels": []
+  },
+  {
+   "id": "dev047",
+   "split": "dev",
+   "text": "Dialogue from the movie: 'Main tujhe zinda nahi chhodunga' - what a scene!",
+   "labels": []
+  },
+  {
+   "id": "dev048",
+   "split": "dev",
+   "text": "Police said the accused threatened the shopkeeper, 'I will kill you and your family', and was arrested on Tuesday.",
+   "labels": []
+  },
+  {
+   "id": "dev049",
+   "split": "dev",
+   "text": "According to reports, a man was booked for posting content threatening to blow up the railway station.",
+   "labels": []
+  },
+  {
+   "id": "dev050",
+   "split": "dev",
+   "text": "NCRB data: cases of extortion rose 12% last year, says the report",
+   "labels": []
+  },
+  {
+   "id": "dev051",
+   "split": "dev",
+   "text": "Court grants bail to man accused of sextortion; police say he demanded money from victims",
+   "labels": []
+  },
+  {
+   "id": "dev052",
+   "split": "dev",
+   "text": "Reminder: never share your OTP with anyone, not even bank staff. Beware of fraud calls. Helpline 1930",
+   "labels": []
+  },
+  {
+   "id": "dev053",
+   "split": "dev",
+   "text": "Fact check: the viral message about poisoned milk in Delhi is fake. Please do not forward.",
+   "labels": []
+  },
+  {
+   "id": "dev054",
+   "split": "dev",
+   "text": "Suicide prevention helpline: if you or someone you know is struggling, please call and talk to someone.",
+   "labels": []
+  },
+  {
+   "id": "dev055",
+   "split": "dev",
+   "text": "Just watched Suicide Squad again, Harley Quinn is the best",
+   "labels": []
+  },
+  {
+   "id": "dev056",
+   "split": "dev",
+   "text": "The documentary on drug cartels was gripping; the war on drugs has failed",
+   "labels": []
+  },
+  {
+   "id": "dev057",
+   "split": "dev",
+   "text": "Breaking Bad is the best show ever, Walter White's empire is unreal",
+   "labels": []
+  },
+  {
+   "id": "dev058",
+   "split": "dev",
+   "text": "Weed killer available at the nursery, DM for price",
+   "labels": []
+  },
+  {
+   "id": "dev059",
+   "split": "dev",
+   "text": "Weeding out corruption is the need of the hour",
+   "labels": []
+  },
+  {
+   "id": "dev060",
+   "split": "dev",
+   "text": "Good morning everyone! Chai and rain, what a Monday in Pune",
+   "labels": []
+  },
+  {
+   "id": "dev061",
+   "split": "dev",
+   "text": "Lost my wallet near Karol Bagh metro, please DM if found",
+   "labels": []
+  },
+  {
+   "id": "dev062",
+   "split": "dev",
+   "text": "Need a plumber in Sector 62 Noida, any recommendations?",
+   "labels": []
+  },
+  {
+   "id": "dev063",
+   "split": "dev",
+   "text": "bhai kal party hai ghar pe, sab aana, biryani pakegi",
+   "labels": []
+  },
+  {
+   "id": "dev064",
+   "split": "dev",
+   "text": "आज मौसम बहुत अच्छा है, चलो चाय पीने चलते हैं",
+   "labels": []
+  },
+  {
+   "id": "dev065",
+   "split": "dev",
+   "text": "Rally mein bheed dekho, kya josh hai, jai ho",
+   "labels": []
+  },
+  {
+   "id": "dev066",
+   "split": "dev",
+   "text": "Selling my old Royal Enfield, 2018 model, 22000 km, genuine buyers DM",
+   "labels": []
+  },
+  {
+   "id": "dev067",
+   "split": "dev",
+   "text": "Kal se school band rahega barish ki wajah se, please inform parents",
+   "labels": []
+  },
+  {
+   "id": "dev068",
+   "split": "dev",
+   "text": "Bank holiday tomorrow, ATMs will work as usual, no need to panic",
+   "labels": []
+  },
+  {
+   "id": "dev069",
+   "split": "dev",
+   "text": "Beware: RBI never asks for your OTP or PIN. Do not click unknown links.",
+   "labels": []
+  },
+  {
+   "id": "dev070",
+   "split": "dev",
+   "text": "Tere liye toh jaan de dunga yaar, tu meri zindagi hai",
+   "labels": []
+  },
+  {
+   "id": "dev071",
+   "split": "dev",
+   "text": "I'm dying to try that new biryani place lol",
+   "labels": []
+  },
+  {
+   "id": "dev072",
+   "split": "dev",
+   "text": "This exam is killing me, I want to die 😂 so much syllabus",
+   "labels": []
+  },
+  {
+   "id": "dev073",
+   "split": "dev",
+   "text": "Investing tip: diversify across index funds; mutual funds are subject to market risks.",
+   "labels": []
+  },
+  {
+   "id": "dev074",
+   "split": "dev",
+   "text": "Selling handmade kurtis, delivery all over India, WhatsApp for rates",
+   "labels": []
+  },
+  {
+   "id": "dev075",
+   "split": "dev",
+   "text": "Gun laws debate: should civilians be allowed a pistol licence? Discuss.",
+   "labels": []
+  },
+  {
+   "id": "dev076",
+   "split": "dev",
+   "text": "Museum exhibit: ancient katta and matchlock guns from Rajasthan, open till 6 pm",
+   "labels": []
+  },
+  {
+   "id": "dev077",
+   "split": "dev",
+   "text": "Hindu-Muslim unity iftar dinner at the colony park, everyone invited",
+   "labels": []
+  },
+  {
+   "id": "dev078",
+   "split": "dev",
+   "text": "We must protect all communities, violence against migrants is wrong and must stop",
+   "labels": []
+  },
+  {
+   "id": "dev079",
+   "split": "dev",
+   "text": "The movie shows a gang burning shops during riots; powerful cinema",
+   "labels": []
+  },
+  {
+   "id": "dev080",
+   "split": "dev",
+   "text": "Poll: which team will win the Ranji trophy? Vote and comment",
+   "labels": []
+  },
+  {
+   "id": "dev081",
+   "split": "dev",
+   "text": "Blood donation camp on Sunday at the community hall. Forward to friends, it can save lives.",
+   "labels": []
+  },
+  {
+   "id": "dev082",
+   "split": "dev",
+   "text": "Anyone promising to double your money in 30 days is running a scam. Stay safe.",
+   "labels": []
+  },
+  {
+   "id": "dev083",
+   "split": "dev",
+   "text": "मैच में आज तो मार डालूंगा गेंदबाजों को, कोहली फॉर्म में है",
+   "labels": []
+  },
+  {
+   "id": "dev084",
+   "split": "dev",
+   "text": "kal ka match jeetenge, dushman team ko maar dalenge 😂🔥",
+   "labels": []
+  },
+  {
+   "id": "dev085",
+   "split": "dev",
+   "text": "Guys DM me for the notes of last semester, rate 50 rupees per subject",
+   "labels": []
+  },
+  {
+   "id": "dev086",
+   "split": "dev",
+   "text": "Delhi Police arrested two men with 3 country-made pistols; a case has been registered",
+   "labels": []
+  },
+  {
+   "id": "dev087",
+   "split": "dev",
+   "text": "Pay the electricity bill by Friday or the connection will be cut, notice from the board.",
+   "labels": []
+  },
+  {
+   "id": "dev088",
+   "split": "dev",
+   "text": "Rajan bhai ko bolo ki paise wapas kare warna mai police complaint karunga",
+   "labels": []
+  },
+  {
+   "id": "dev089",
+   "split": "dev",
+   "text": "Yesterday I watched a documentary about kidnappers who target tourists; stay alert while travelling",
+   "labels": []
+  },
+  {
+   "id": "dev090",
+   "split": "dev",
+   "text": "Traffic jam at Ring Road again, avoid the flyover, reach late? blame the rain",
+   "labels": []
+  },
+  {
+   "id": "dev091",
+   "split": "dev",
+   "text": "मेरी दादी कहती थीं कि मेहनत का फल मीठा होता है",
+   "labels": []
+  },
+  {
+   "id": "dev092",
+   "split": "dev",
+   "text": "Happy birthday bhai! Party tonight, cake ready, don't be late",
+   "labels": []
+  },
+  {
+   "id": "held001",
+   "split": "heldout",
+   "text": "You have been warned. Next time I see you outside the college gate I'm going to stab you.",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "held002",
+   "split": "heldout",
+   "text": "saale, ghar se bahar nikla toh goli maar dunga, yaad rakhna",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "held003",
+   "split": "heldout",
+   "text": "तेरे परिवार को नहीं छोड़ूंगा, अंजाम भुगतेगा",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "held004",
+   "split": "heldout",
+   "text": "Bomb is planted near the metro exit. Don't say you weren't told.",
+   "labels": [
+    "threat_violence"
+   ]
+  },
+  {
+   "id": "held005",
+   "split": "heldout",
+   "text": "Give me the 15,000 today, otherwise your photos go to your office group. I mean it.",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "held006",
+   "split": "heldout",
+   "text": "Transfer the money or all your chats will be circulated to your family. Last chance.",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "held007",
+   "split": "heldout",
+   "text": "tumhare private photos mere paas hain, paise bhejo warna sabko bhej dunga",
+   "labels": [
+    "extortion_sextortion"
+   ]
+  },
+  {
+   "id": "held008",
+   "split": "heldout",
+   "text": "Dear customer, your account has been suspended. Verify now at the link below or call this number to avoid closure.",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held009",
+   "split": "heldout",
+   "text": "Earn 3000 daily from home, no experience needed, just message on WhatsApp to start",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held010",
+   "split": "heldout",
+   "text": "Loan approved in 5 minutes! Pay a small insurance fee first and get 2 lakh instantly",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held011",
+   "split": "heldout",
+   "text": "Aapka electricity connection aaj raat kat jayega, abhi is number pe call karo aur OTP share karo",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held012",
+   "split": "heldout",
+   "text": "Scan this QR to receive your refund of Rs 4500, limited time",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held013",
+   "split": "heldout",
+   "text": "Crypto giveaway!! send 0.1 ETH and get 0.2 ETH back within one hour, verified admin",
+   "labels": [
+    "financial_fraud"
+   ]
+  },
+  {
+   "id": "held014",
+   "split": "heldout",
+   "text": "All migrants must be driven out of this town, they are parasites and we should finish them",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "held015",
+   "split": "heldout",
+   "text": "Gather at the temple ground at 7 pm tomorrow, we will burn their houses and teach them a lesson",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "held016",
+   "split": "heldout",
+   "text": "मस्जिद और उनकी दुकानें जला दो, आज रात इकट्ठा हो जाओ",
+   "labels": [
+    "hate_incitement"
+   ]
+  },
+  {
+   "id": "held017",
+   "split": "heldout",
+   "text": "Fresh charas and ganja stock in, home delivery across Manali, message for price",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "held018",
+   "split": "heldout",
+   "text": "Selling a glock and 50 cartridges, no papers needed, serious buyers only, dm",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "held019",
+   "split": "heldout",
+   "text": "pistol chahiye toh batao, bina licence ke mil jayegi, rate chat pe",
+   "labels": [
+    "drugs_arms"
+   ]
+  },
+  {
+   "id": "held020",
+   "split": "heldout",
+   "text": "I have decided. Tonight I will end it all, I can't take this pain anymore.",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "held021",
+   "split": "heldout",
+   "text": "main marna chahta hoon, ab koi wajah nahi bachi jeene ki",
+   "labels": [
+    "self_harm"
+   ]
+  },
+  {
+   "id": "held022",
+   "split": "heldout",
+   "text": "Alert!! Child lifters gang active in your locality, spotted near the school. Share with everyone urgently.",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "held023",
+   "split": "heldout",
+   "text": "Forward this message to as many people as you can before government deletes it, save lives",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "held024",
+   "split": "heldout",
+   "text": "kal se bank band rahenge 5 din, aaj hi paise nikal lo, sabko bhejo",
+   "labels": [
+    "misinformation_panic"
+   ]
+  },
+  {
+   "id": "held025",
+   "split": "heldout",
+   "text": "India will absolutely murder Pakistan in the World Cup, mark my words",
+   "labels": []
+  },
+  {
+   "id": "held026",
+   "split": "heldout",
+   "text": "Our openers destroyed the bowling today, what a chase, absolutely killed it",
+   "labels": []
+  },
+  {
+   "id": "held027",
+   "split": "heldout",
+   "text": "Bhai kal ki match mein sabko maar dunga, dekhte hain kaun rokta hai",
+   "labels": []
+  },
+  {
+   "id": "held028",
+   "split": "heldout",
+   "text": "Lyrics I can't stop humming: 'main tujhe chhod ke kabhi nahi jaunga' from the new film",
+   "labels": []
+  },
+  {
+   "id": "held029",
+   "split": "heldout",
+   "text": "The film's villain says 'I will kill you all' in the trailer and the audience cheered",
+   "labels": []
+  },
+  {
+   "id": "held030",
+   "split": "heldout",
+   "text": "Man held for threatening neighbour: police said he shouted 'I will shoot you' during a parking row",
+   "labels": []
+  },
+  {
+   "id": "held031",
+   "split": "heldout",
+   "text": "A court on Monday took note of a sextortion racket busted in Jamtara, reported PTI",
+   "labels": []
+  },
+  {
+   "id": "held032",
+   "split": "heldout",
+   "text": "Warning: scammers pretend to be from the bank and ask you to share the OTP. Never do it. Report on 1930.",
+   "labels": []
+  },
+  {
+   "id": "held033",
+   "split": "heldout",
+   "text": "Rumour going around that ATMs will be shut for a week is FAKE, RBI has clarified. Please don't forward.",
+   "labels": []
+  },
+  {
+   "id": "held034",
+   "split": "heldout",
+   "text": "If you feel like ending your life please reach out to a helpline, you are not alone",
+   "labels": []
+  },
+  {
+   "id": "held035",
+   "split": "heldout",
+   "text": "Started a new fitness routine today, five km run in the morning, feeling great",
+   "labels": []
+  },
+  {
+   "id": "held036",
+   "split": "heldout",
+   "text": "Anyone knows a good tailor near Lajpat Nagar? Need a blouse stitched by Friday",
+   "labels": []
+  },
+  {
+   "id": "held037",
+   "split": "heldout",
+   "text": "मेरा नया फोन आ गया, कैमरा बहुत शानदार है",
+   "labels": []
+  },
+  {
+   "id": "held038",
+   "split": "heldout",
+   "text": "kal Sunday hai, cricket khelne chalte hain, jo late aaya usse maar dunga chai pilane ke liye lol",
+   "labels": []
+  },
+  {
+   "id": "held039",
+   "split": "heldout",
+   "text": "Just finished the season finale, that ending killed me, no spoilers please",
+   "labels": []
+  },
+  {
+   "id": "held040",
+   "split": "heldout",
+   "text": "Our society's WhatsApp group is filled with good morning forwards, please stop",
+   "labels": []
+  },
+  {
+   "id": "held041",
+   "split": "heldout",
+   "text": "Selling my 2019 Activa with papers, price negotiable, dm if interested",
+   "labels": []
+  },
+  {
+   "id": "held042",
+   "split": "heldout",
+   "text": "Free health camp Saturday 10 am, please forward to neighbours and friends",
+   "labels": []
+  },
+  {
+   "id": "held043",
+   "split": "heldout",
+   "text": "The police recovered two pistols and some cartridges from a house; investigation is on, officers said",
+   "labels": []
+  },
+  {
+   "id": "held044",
+   "split": "heldout",
+   "text": "Winter sale! 50% off, delivery available, whatsapp for rates",
+   "labels": []
+  },
+  {
+   "id": "held045",
+   "split": "heldout",
+   "text": "Tere bina jeena nahi chahta yaar, tu bahut yaad aata hai (song lines) 🎶",
+   "labels": []
+  },
+  {
+   "id": "held046",
+   "split": "heldout",
+   "text": "Nobody should be attacked for their religion; violence against any community is unacceptable",
+   "labels": []
+  },
+  {
+   "id": "held047",
+   "split": "heldout",
+   "text": "Mutual fund returns are not guaranteed, please read the offer document carefully",
+   "labels": []
+  },
+  {
+   "id": "held048",
+   "split": "heldout",
+   "text": "Traffic advisory: expect delays near the stadium due to the match, use metro",
+   "labels": []
+  },
+  {
+   "id": "held049",
+   "split": "heldout",
+   "text": "Lottery ticket sold at the corner shop, the draw is on Friday, good luck everyone",
+   "labels": []
+  },
+  {
+   "id": "held050",
+   "split": "heldout",
+   "text": "Diwali special: send us your address and we will deliver sweets to your door",
+   "labels": []
+  }
+ ]
+}

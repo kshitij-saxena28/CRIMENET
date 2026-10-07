@@ -1,0 +1,28 @@
+id: h03
+split: heldout
+lang: Hinglish
+tags: romanised
+---text---
+Police Station: Civil Lines    Jila: Kanpur Nagar
+Report No. 0389/2026     Date: 21.05.2026
+Sir, main Mohammad Aslam, walad Abdul Rasheed, mohalla Colonelganj ka rehne wala hoon. Mera contact number 9450 667 788 hai. Raat ko 20-05-2026 ko hum log shaadi mein gaye the. Wapas aakar dekha to taala tuta hua tha aur almari se 8 tola sona aur nakad 2.5 lakh rupaye gayab the. Mujhe apne kiraayedaar Pappu Nishad par shak hai. Padosi Geeta Devi ne raat 1 baje Pappu ko ek Splendor bike UP 78 BT 2345 par jaate dekha tha. Kripya karyawahi karein. Dhara 457, 380 IPC lagayi jaye.
+Sub Inspector Om Prakash jaanch karenge.
+---expect---
+field district: Kanpur Nagar
+field police_station: Civil Lines
+field fir_date: 2026-05-21
+field complainant: Mohammad Aslam
+entity PHONE: 9450667788
+entity VEHICLE: UP78BT2345
+entity AMOUNT: 250000
+entity DATE: 2026-05-21
+entity DATE: 2026-05-20
+entity SECTION: IPC:457
+entity SECTION: IPC:380
+person: Mohammad Aslam | COMPLAINANT
+person: Abdul Rasheed | RELATIVE
+person: Pappu Nishad | ACCUSED
+person: Geeta Devi | WITNESS
+person: Om Prakash | INVESTIGATING_OFFICER
+rel: Pappu Nishad | USED | UP78BT2345
+---end---

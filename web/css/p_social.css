@@ -1,0 +1,58 @@
+/* Social media intelligence (f_social.js). All rules are prefixed so-. Colours come from theme tokens only. */
+.so-page{display:flex;flex-direction:column;gap:1rem}
+.so-head h2{margin:0 0 .3rem}
+.so-body{display:flex;flex-direction:column;gap:1rem;min-width:0}
+.so-line{margin:.2rem 0 .6rem}
+.so-explain{margin:.4rem 0;font-size:.86rem}
+.so-explain summary{cursor:pointer;color:var(--accent2)}
+.so-explain p,.so-explain ul{margin:.4rem 0 .2rem}
+.so-mark{background:var(--warn);color:var(--bg);padding:0 .15em;border-radius:3px}
+.so-chips{display:flex;flex-wrap:wrap;gap:.3rem;margin:.25rem 0}
+.so-flag,.so-coord,.so-post{display:flex;flex-direction:column;gap:.5rem;border-left:4px solid var(--line2);margin-bottom:.7rem}
+.so-flag.so-sev-high{border-left-color:var(--bad)}
+.so-flag.so-sev-medium{border-left-color:var(--warn)}
+.so-flag.so-sev-welfare{border-left-color:var(--accent2)}
+.so-flag-top,.so-post-top{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.so-text{margin:0;padding:.5rem .7rem;background:var(--panel2);border:1px solid var(--line);border-radius:var(--r-sm);overflow-wrap:anywhere;white-space:pre-wrap}
+.so-actions{flex-wrap:wrap;gap:.5rem}
+.so-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:.4rem;margin-bottom:.6rem}
+.so-cat{display:flex;justify-content:space-between;gap:.5rem;padding:.35rem .6rem;background:var(--panel2);border:1px solid var(--line);border-radius:var(--r-sm)}
+.so-cta{gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
+.so-sample{display:flex;flex-direction:column;gap:.4rem;align-items:flex-start}
+.so-check{display:flex;flex-direction:row!important;align-items:center;gap:.4rem;color:var(--text)}
+.so-seed{margin-top:.3rem}
+.so-headline{font-size:1rem;margin:.2rem 0 .6rem;color:var(--text)}
+.so-snippet{font-style:italic;overflow-wrap:anywhere}
+.so-acct{min-width:0}
+.so-heat{width:100%;max-width:760px;height:auto}
+.so-axis{fill:var(--muted);font-size:10px}
+.so-cell{fill:var(--accent)}
+.so-net{width:100%;max-width:760px;height:auto;background:var(--panel2);border:1px solid var(--line);border-radius:var(--r)}
+.so-edge{stroke:var(--line2);stroke-opacity:.8}
+.so-node{stroke:var(--bg);stroke-width:1.5}
+.so-comm-0{fill:var(--accent)}.so-comm-1{fill:var(--accent2)}.so-comm-2{fill:var(--warn)}.so-comm-3{fill:var(--good)}.so-comm-4{fill:var(--bad)}
+.so-ref{fill-opacity:.45;stroke:var(--muted);stroke-dasharray:3 2}
+.so-nlabel{fill:var(--text);font-size:10px;pointer-events:none}
+button.link{background:none;border:0;padding:0;color:var(--accent2);cursor:pointer;text-decoration:underline;font:inherit}
+button.link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.so-cta{display:flex;flex-wrap:wrap;gap:1rem 1.5rem;align-items:flex-start;margin-top:1rem}
+
+/* ---- social intelligence tools (priority queue, look-alikes, narratives, dossier) ---- */
+.si-queue{align-items:start}
+.si-item{display:grid;gap:.55rem;margin-bottom:.7rem;border-left:3px solid var(--line2)}
+.si-item.si-l-high{border-left-color:var(--bad)}.si-item.si-l-medium{border-left-color:var(--warn)}.si-item.si-l-low{border-left-color:var(--accent2)}
+.si-top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .7rem}
+.si-spacer{flex:1}
+.si-why{margin:0;padding-left:1.1rem;color:var(--muted);font-size:.86rem;display:grid;gap:.15rem}
+.si-score{position:relative;display:inline-flex;align-items:center;gap:.5rem;min-width:110px}
+.si-score i{display:block;height:6px;background:var(--faint);border-radius:1px;max-width:70px}
+.si-score.si-high i{background:var(--bad)}.si-score.si-medium i{background:var(--warn)}.si-score.si-low i{background:var(--accent2)}
+.si-score b{font:700 .8rem var(--f-mono)}
+.si-weights{border-collapse:collapse;font-size:.84rem}.si-weights td{padding:.2rem .8rem .2rem 0;border-bottom:1px solid var(--line)}.si-weights .num{text-align:right;font-family:var(--f-mono)}
+.si-form{gap:.6rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:1rem}
+.si-map{height:380px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.si-hours{width:100%;max-width:420px;height:auto;color:var(--accent)}
+.si-eng{margin-top:.5rem;padding:.7rem .9rem;border:1px dashed var(--line2);border-radius:var(--r-sm);background:var(--panel2)}
+.si-note{padding:.6rem .8rem;border-left:2px solid var(--line2);margin:.4rem 0;background:var(--panel2)}.si-note p{margin:.2rem 0}
+.si-dossier{display:grid;gap:.8rem}
+@media print{.si-dossier{gap:.4rem}}

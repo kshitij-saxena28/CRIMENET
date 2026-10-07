@@ -1,0 +1,21 @@
+/* Two-step sign-in (web/js/mfa_ui.js). Only the shared variables are used. */
+.mf-panel { display: grid; gap: .7rem; }
+.mf-panel h4 { margin: 0; display: flex; align-items: center; gap: .5rem; }
+.mf-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.mf-steps { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: 0; padding: 0; counter-reset: mf; }
+.mf-steps li { counter-increment: mf; font-size: .78rem; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-sm); padding: .15rem .55rem; }
+.mf-steps li::before { content: counter(mf) ". "; }
+.mf-steps li.on { color: var(--text); border-color: var(--accent); }
+.mf-qr { display: flex; justify-content: center; padding: .6rem; background: var(--panel2); border: 1px solid var(--line2); border-radius: var(--r-sm); }
+.mf-qr-svg { width: min(300px, 100%); height: auto; aspect-ratio: 1; background: #fff; border-radius: var(--r-sm); shape-rendering: crispEdges; }
+.mf-secret { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .5rem .6rem; background: var(--panel2); border: 1px solid var(--line); border-radius: var(--r-sm); }
+.mf-secret code { font-family: var(--f-mono); letter-spacing: .06em; word-break: break-all; color: var(--text); }
+.mf-recovery { display: grid; gap: .7rem; }
+.mf-codes { list-style: none; margin: 0; padding: .7rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: .4rem; background: var(--panel2); border: 1px solid var(--line2); border-radius: var(--r-sm); }
+.mf-code { font-family: var(--f-mono); font-size: .95rem; letter-spacing: .05em; color: var(--text); }
+.mf-check { display: flex; align-items: flex-start; gap: .5rem; font-size: .88rem; color: var(--text); }
+.mf-policy { display: grid; gap: .6rem; }
+.mf-roles { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.mf-role { display: grid; grid-template-columns: minmax(9rem, 12rem) 1fr auto; align-items: center; gap: .6rem; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--panel2); }
+.mf-role-name { display: flex; align-items: center; gap: .4rem; color: var(--text); font-weight: 600; }
+@media (max-width: 640px) { .mf-role { grid-template-columns: 1fr; } }

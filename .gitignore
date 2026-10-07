@@ -1,0 +1,30 @@
+# runtime state - never commit
+*.db
+*.sqlite3
+.env
+.runtime_secret
+initial_credentials.txt
+evidence_store/*
+!evidence_store/.gitkeep
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# v5
+.custody_ed25519
+.custody_keyring.json
+backups/
+inbox/
+
+# v6 data-integrity ledger: keys and witness heads are secrets/state, never commit
+.ledger_ed25519
+.ledger_ed25519.next
+.ledger_ed25519.tmp
+.ledger_heads.log

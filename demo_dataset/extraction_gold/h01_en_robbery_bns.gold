@@ -1,0 +1,34 @@
+id: h01
+split: heldout
+lang: English
+tags: clean,bns,robbery
+---text---
+FIRST INFORMATION REPORT (Section 173 BNSS)
+District: Faridabad; Police Station: Sector 31; Year: 2026; FIR No: 219
+Date and time of report: 19 September 2026 at 01:15 hrs
+Acts and Sections: Bharatiya Nyaya Sanhita 2023 - Sections 309(4), 3(5)
+Place of occurrence: Near Badkhal Chowk, NH-19, Faridabad
+Name of complainant: Harpreet Singh Gill, son of Jaspal Singh Gill, resident of House No. 88, Sector 21C, Faridabad. Tel. 9958 123 456.
+Brief facts: On 18-09-2026 at about 11:40 PM, while the complainant was returning from his shop, three unknown persons on a Bajaj Pulsar (HR 51 AQ 3304) intercepted him, showed a country-made pistol and robbed Rs. 1,20,000 in cash and one gold chain. One of the miscreants was addressed as "Bunty" by the others. Passerby Mohd. Salim noted the number of the bike.
+Investigating Officer: Sub-Inspector Naresh Yadav
+---expect---
+field district: Faridabad
+field police_station: Sector 31
+field year: 2026
+field fir_date: 2026-09-19
+field complainant: Harpreet Singh Gill
+field investigating_officer: Naresh Yadav
+entity PHONE: 9958123456
+entity VEHICLE: HR51AQ3304
+entity AMOUNT: 120000
+entity DATE: 2026-09-19
+entity DATE: 2026-09-18
+entity SECTION: BNS:309
+entity SECTION: BNS:3
+person: Harpreet Singh Gill | COMPLAINANT
+person: Jaspal Singh Gill | RELATIVE
+person: Bunty | ACCUSED
+person: Mohd. Salim | WITNESS
+person: Naresh Yadav | INVESTIGATING_OFFICER
+rel: Harpreet Singh Gill | OWNS | 9958123456
+---end---

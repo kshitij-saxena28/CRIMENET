@@ -1,0 +1,18 @@
+# Usage: copy .env.example to .env, set SECRET_KEY (and ADMIN_PASSWORD), then `docker compose up --build`.
+# One service: the API and the web UI are served together on port 8000.
+services:
+  app:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    ports: ["127.0.0.1:8000:8000"]      # bound to localhost; put a TLS reverse proxy in front for real use
+    volumes:
+      - dcn-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  dcn-data:

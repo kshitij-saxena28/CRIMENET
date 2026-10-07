@@ -1,0 +1,32 @@
+id: h12
+split: heldout
+lang: Hindi
+tags: devanagari,codemix
+---text---
+Police Station: कोतवाली, District: मेरठ
+FIR No: 0640/2026 Date: 06/10/2026
+Sections: 379, 411 IPC
+Complainant: विकास त्यागी, s/o सुभाष त्यागी, mobile 9012334455
+घटना: दिनांक 05/10/2026 को रात में शिकायतकर्ता की Bullet बाइक UP 15 CD 7788 घर के बाहर से चोरी हो गई। बाइक की कीमत करीब ₹1.8 लाख है। पास की दुकान के CCTV में आरोपी दिख रहा है जो नीली शर्ट में है। गवाह: राजेश चौधरी।
+IO: SI Praveen Malik
+---expect---
+field district: मेरठ
+field police_station: कोतवाली
+field fir_number: 0640/2026
+field fir_date: 2026-10-06
+field complainant: विकास त्यागी
+field investigating_officer: Praveen Malik
+entity PHONE: 9012334455
+entity VEHICLE: UP15CD7788
+entity AMOUNT: 180000
+entity DATE: 2026-10-06
+entity DATE: 2026-10-05
+entity SECTION: IPC:379
+entity SECTION: IPC:411
+person: विकास त्यागी | COMPLAINANT
+person: सुभाष त्यागी | RELATIVE
+person: राजेश चौधरी | WITNESS
+person: Praveen Malik | INVESTIGATING_OFFICER
+translate: bike
+rel: विकास त्यागी | OWNS | 9012334455
+---end---

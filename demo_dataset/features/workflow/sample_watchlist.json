@@ -1,0 +1,9 @@
+{
+  "_note": "SYNTHETIC. Identifiers below are fictitious and exist only in the bundled demo dataset (CASE-2026-101 vehicles). Use them with the 'Load sample' button on the Watchlists tab.",
+  "name": "Sample: vehicles of interest",
+  "items": [
+    {"kind": "vehicle", "value": "DL32ME5177", "note": "synthetic - appears in the demo vehicle table"},
+    {"kind": "vehicle", "value": "DL 55 HK 5801", "note": "synthetic - spacing is normalised"},
+    {"kind": "phone", "value": "+91 90000 00001", "note": "synthetic - will not match anything"}
+  ]
+}

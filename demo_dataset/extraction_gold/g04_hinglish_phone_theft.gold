@@ -1,0 +1,35 @@
+id: g04
+split: dev
+lang: Hinglish
+tags: romanised
+---text---
+Thana: Sadar Bazar, Zila: Delhi
+FIR No 231/2026    Dinank: 14-03-2026
+Shikayatkarta: Sunita Devi w/o Ramesh Yadav, r/o H.No 45, Gali No 3, Paharganj, Delhi. Mob 9810055512
+Ghatna ka sthan: Paharganj Main Bazar, Delhi
+Ghatna: Meri beti Pooja ka mobile phone Samsung Galaxy 12 hazar rupaye ka chori ho gaya. Dinank 13 March 2026 ko sham 7 baje ek ladke ne bheed mein pocket se phone nikal liya. Aaropi ka naam Sonu urf Sonu Chikna bataya gaya hai jo Sadar Bazar ka rehne wala hai. Gawah Mukesh Kumar ne use bhagte hue dekha. Aaropi ke paas DL 8C AB 1234 number ki scooty thi.
+Dhara 379, 411 IPC
+Jaanch Adhikari: SI Rajesh Tomar
+---expect---
+field fir_number: 231/2026
+field district: Delhi
+field police_station: Sadar Bazar
+field fir_date: 2026-03-14
+field complainant: Sunita Devi
+field investigating_officer: Rajesh Tomar
+entity PHONE: 9810055512
+entity VEHICLE: DL8CAB1234
+entity AMOUNT: 12000
+entity DATE: 2026-03-14
+entity DATE: 2026-03-13
+entity SECTION: IPC:379
+entity SECTION: IPC:411
+person: Sunita Devi | COMPLAINANT
+person: Ramesh Yadav | RELATIVE
+person: Pooja | VICTIM
+person: Sonu | ACCUSED
+person: Mukesh Kumar | WITNESS
+person: Rajesh Tomar | INVESTIGATING_OFFICER
+rel: Sonu | USED | DL8CAB1234
+rel: Sunita Devi | OWNS | 9810055512
+---end---

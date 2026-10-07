@@ -1,0 +1,11 @@
+{
+  "name": "DARK CRIMENET AI Synthetic Investigation Dataset",
+  "type": "deterministic-bundled-demo",
+  "generator": "scripts/seed_demo.py",
+  "cases": 8,
+  "notes": "Loaded only when explicitly requested from the Demo Lab or seed_demo.py; never silently injected into a fresh FIR workspace.",
+  "cross_fir_samples": [
+    "cross_fir_samples/FIR_LINK_01.txt",
+    "cross_fir_samples/FIR_LINK_02.txt"
+  ]
+}

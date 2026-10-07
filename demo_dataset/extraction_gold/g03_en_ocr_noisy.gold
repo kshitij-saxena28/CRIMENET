@@ -1,0 +1,39 @@
+id: g03
+split: dev
+lang: English
+tags: noisy,ocr
+---text---
+F1RST INF0RMATION REP0RT
+1. pistrict: Pune  P5: Hadapsar  Year: 2O26  FIR No: 0O87/2026
+Date of FIR: 2l/O1/2026  Time: 1O:15 hrs
+2. Acts & Sect1ons: IPC Section 379, 4l1
+5. P|ace of Occurrence: Magarpatta Road, near Seasons Mal|, Pune
+6. Comp|ainant / Informant:
+- Name: Sanjay Deshmukh
+- Father's Name: Ramesh Deshmukh
+- Mobile: 9B22O34567
+7. Accused: Unknown person on a black Activa MH12 AB 12S4
+8. Property: 1 iPhone 14, Cash Rs. 8,OOO
+9. Brief Facts: On 2O/O1/2026 the comp|ainant's mobile was snatched by two persons on a two-wheeler bearing no. MH12AB12S4.
+10. Investigating Officer: PSI Kavita Joshi
+---expect---
+field fir_number: 0087/2026
+field year: 2026
+field district: Pune
+field police_station: Hadapsar
+field fir_date: 2026-01-21
+field fir_time: 10:15
+field complainant: Sanjay Deshmukh
+field investigating_officer: Kavita Joshi
+entity PHONE: 9822034567
+entity VEHICLE: MH12AB1254
+entity AMOUNT: 8000
+entity DATE: 2026-01-21
+entity DATE: 2026-01-20
+entity SECTION: IPC:379
+entity SECTION: IPC:411
+person: Sanjay Deshmukh | COMPLAINANT
+person: Ramesh Deshmukh | RELATIVE
+person: Kavita Joshi | INVESTIGATING_OFFICER
+rel: Sanjay Deshmukh | OWNS | 9822034567
+---end---
